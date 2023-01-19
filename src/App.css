@@ -92,11 +92,9 @@ height: 100vh;
   padding: 10px;
   color: #17151c;
 }
-#writing-header{
-  size: 500px;
-}
+
 h1.writing{
-font-size: 150px;
+font-size: 50px;
 color: darkcyan;
 text-shadow: 6px 6px 6px darkslategray;
 text-decoration: underline;
