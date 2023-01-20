@@ -1,0 +1,15 @@
+.carousel-wrapper{
+    display: flex;
+flex-direction: row;
+}
+.slide1{
+    background-image: url(../assets/1.jpg);
+}
+.title{
+    display: flex;
+    justify-content: center;
+}
+.supercoach{
+    width: 33vw;
+    height: 89vh;
+}

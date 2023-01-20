@@ -12,6 +12,8 @@ function Writing() {
            and the intersection of art and technology.
 
 
+          <br></br>
+          
           <br></br> My articles are like a one-two punch, packed with
           information and a healthy dose of humor.
           

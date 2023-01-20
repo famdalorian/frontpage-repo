@@ -99,3 +99,7 @@ color: darkcyan;
 text-shadow: 6px 6px 6px darkslategray;
 text-decoration: underline;
 }
+.home-wrapper{
+  display: flex;
+  
+}
