@@ -3,7 +3,7 @@ import React from 'react'
 function Xxisp() {
   return (
     
-    <div className='header'>xxisp.eth</div>
+    <div className='header'></div>
   )
 }
 

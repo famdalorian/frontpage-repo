@@ -1,12 +1,14 @@
 import React from "react";
-import Carousel from "../components/Carousel";
 import "../styles/home.css";
+import XXISPSVG from "../assets/logo.svg"
 
 function Home() {
   return (
     <div className="title">
       <div className="home-wrapper">
-        <h1 className="title-box">xxisp.eth</h1>
+        <h1 className="title-box">
+    
+        </h1>
       </div>
       
      
