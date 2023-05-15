@@ -87,4 +87,19 @@
     border: none; /* Remove the border */
     /* Other CSS properties */
   }
+  body {
+    background: #17151c; /* Dark background color */
+    color: #ffffff; /* White text color */
+  }.sidebar {
+    /* ... existing styles ... */
+    color: #2c2833;
+  }
+  
+  .sidebar a {
+    color: #2c2833;
+  }
+  
+  .sidebar a.active {
+    color: #ffffff;
+  }
   

@@ -58,3 +58,7 @@ body {
   margin-left: 10px;
   font-weight: bold;
 }
+body {
+  background: #17151c; /* Dark background color */
+  color: #ffffff; /* White text color */
+}

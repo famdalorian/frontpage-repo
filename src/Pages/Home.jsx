@@ -14,7 +14,6 @@ function Home() {
       <button onClick={() => setShowForm(!showForm)}>
         {showForm ? 'Hide Sign Up Form' : 'Show Sign Up Form'}
       </button>
-      {/* Rest of your home component */}
     </div>
   );
 }

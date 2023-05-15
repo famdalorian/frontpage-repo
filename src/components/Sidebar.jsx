@@ -1,20 +1,5 @@
 import React, { useState } from "react";
-import {
-  FaBars,
-  FaTh,
-  FaUser,
-  FaTshirt,
-  FaBitcoin,
-  FaPen,
-  FaAccessibleIcon,
-  FaCode,
-  FaVoicemail,
-  FaPaintBrush,
-  FaFighterJet,
-  FaAdversal,
-  FaThermometerThreeQuarters,
-  FaRunning,
-} from "react-icons/fa";
+import { FaBars, FaTimes, FaTh, FaUser, FaTshirt, FaBitcoin, FaPen, FaAccessibleIcon, FaCode, FaVoicemail, FaPaintBrush, FaFighterJet, FaAdversal, FaThermometerThreeQuarters, FaRunning } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 import "../styles/sidebar.css";
 
@@ -24,7 +9,6 @@ function Sidebar({ children }) {
   const toggle = () => {
     setIsOpen(!isOpen);
   };
-
   const menuItem = [
     {
       path: "/dashboard",
@@ -77,9 +61,10 @@ function Sidebar({ children }) {
     <div className={`container ${isOpen ? "sidebar-open" : ""}`}>
       <div className={`sidebar ${isOpen ? "sidebar-open" : ""}`}>
         <div className={`top_section ${isOpen ? "top_section-open" : ""}`}>
-          <h1 className={`logo ${isOpen ? "logo-open" : ""}`}>xxisp.eth</h1>
-          <div className="bars">
-            <FaBars onClick={toggle} />
+        
+         
+          <div className="bars" onClick={toggle}>
+            {isOpen ? <FaTimes /> : <FaBars />}
           </div>
         </div>
         {menuItem.map((item, index) => (
