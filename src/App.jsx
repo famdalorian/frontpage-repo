@@ -11,27 +11,27 @@ import Writing from "./Pages/Writing.jsx";
 import Sidebar from "./components/Sidebar.jsx";
 import Merch from "./Pages/Merch.jsx";
 import Home from "./Pages/Home.jsx";
+
 function App() {
   return (
     <div className="App">
-      <div className="home-wrapper">
-        <HashRouter>
-          <Sidebar>
-            <Routes>
-              <Route path="/" element={<Dashboard />} />
-              <Route path="/about" element={<About />} />
-              <Route path="/art" element={<Art />} />
-              <Route path="/combatsports" element={<CombatSports />} />
-              <Route path="/contact" element={<Contact />} />
-              <Route path="/projects" element={<Projects />} />
-              <Route path="/web3" element={<Web3 />} />
-              <Route path="/merch" element={<Merch />} />
-              <Route path="/writing" element={<Writing />} />
-            </Routes>
-          </Sidebar>
-        </HashRouter>
-        <Home />
-      </div>
+     
+      <HashRouter>
+        {" "}
+        <Sidebar>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/art" element={<Art />} />
+            <Route path="/combatsports" element={<CombatSports />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/web3" element={<Web3 />} />
+            <Route path="/merch" element={<Merch />} />
+            <Route path="/writing" element={<Writing />} />
+          </Routes>
+        </Sidebar>
+      </HashRouter>
     </div>
   );
 }

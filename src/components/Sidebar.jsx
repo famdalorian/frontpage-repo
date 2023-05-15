@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import {
   FaBars,
   FaTh,
@@ -16,65 +16,70 @@ import {
   FaRunning,
 } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
+import "../styles/sidebar.css";
 
 function Sidebar({ children }) {
-  const[isOpen ,setIsOpen] = useState(false);
-  const toggle =  () => setIsOpen (!isOpen);
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggle = () => {
+    setIsOpen(!isOpen);
+  };
+
   const menuItem = [
     {
       path: "/dashboard",
-      name: "dashboard",
+      name: "Dashboard",
       icon: <FaTh />,
     },
     {
       path: "/about",
-      name: "about",
+      name: "About",
       icon: <FaUser />,
     },
     {
       path: "/art",
-      name: "art",
+      name: "Art",
       icon: <FaPaintBrush />,
     },
     {
       path: "/combatsports",
-      name: "combatsports",
+      name: "Combat Sports",
       icon: <FaRunning />,
     },
-   
-
     {
       path: "/merch",
-      name: "merch",
+      name: "Merch",
       icon: <FaTshirt />,
     },
     {
       path: "/projects",
-      name: "projects",
+      name: "Projects",
       icon: <FaCode />,
     },
     {
       path: "/web3",
-      name: "Crypto",
+      name: "Web3",
       icon: <FaBitcoin />,
     },
     {
       path: "/writing",
       name: "Writing",
       icon: <FaPen />,
-    }, {
+    },
+    {
       path: "/contact",
-      name: "contact",
+      name: "Contact",
       icon: <FaVoicemail />,
     },
   ];
+
   return (
-    <div className="container">
-      <div style={{width: isOpen ? '200px': '50px'}} className="sidebar">
-        <div style={{width: isOpen ? '300px': '50px'}} className="top_section">
-          <h1 style={{display: isOpen ? 'block': 'none'}} className="logo">xxisp.eth</h1>
-          <div style={{marginLeft: isOpen ? '50px': '0px'}}className="bars">
-            <FaBars onClick={toggle}/>
+    <div className={`container ${isOpen ? "sidebar-open" : ""}`}>
+      <div className={`sidebar ${isOpen ? "sidebar-open" : ""}`}>
+        <div className={`top_section ${isOpen ? "top_section-open" : ""}`}>
+          <h1 className={`logo ${isOpen ? "logo-open" : ""}`}>xxisp.eth</h1>
+          <div className="bars">
+            <FaBars onClick={toggle} />
           </div>
         </div>
         {menuItem.map((item, index) => (
@@ -82,10 +87,12 @@ function Sidebar({ children }) {
             to={item.path}
             key={index}
             className="link"
-            activeclassName="active"
+            activeClassName="active"
           >
             <div className="icon">{item.icon}</div>
-            <div style={{display: isOpen ? 'block': 'none'}}  className="link_text">{item.name}</div>
+            <div className={`link_text ${isOpen ? "link_text-open" : ""}`}>
+              {item.name}
+            </div>
           </NavLink>
         ))}
       </div>

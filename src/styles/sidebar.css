@@ -1,0 +1,90 @@
+.container {
+    display: flex;
+  }
+  
+  .sidebar {
+    width: 50px;
+    background-color: #ffb7b2; /* Dark theme color */
+    transition: width 0.5s ease-in-out;
+  }
+  
+  .sidebar-open {
+    width: 200px;
+  }
+  
+  .top_section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  
+  .top_section-open {
+    padding: 10px 20px;
+  }
+  
+  .logo {
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: bold;
+    display: none;
+  }
+  
+  .logo-open {
+    display: block;
+  }
+  
+  .bars {
+    font-size: 20px;
+    color: #ffffff;
+    cursor: pointer;
+  }
+  
+  .link {
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .link:hover {
+    background-color: #ffb7b2; /* Pastel Pink */
+  }
+  
+  .link.active {
+    background-color: #ff9c91; /* Lighter Pastel Pink */
+  }
+  
+  .icon {
+    margin-right: 10px;
+  }
+  
+  .link_text {
+    display: none;
+  }
+  
+  .link_text-open {
+    display: block;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    transition: opacity 0.3s ease;
+    opacity: 0.8;
+  }
+  
+  .link_text-open:hover {
+    opacity: 1;
+  }
+  
+  main {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .container {
+    border: none; /* Remove the border */
+    /* Other CSS properties */
+  }
+  
