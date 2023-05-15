@@ -2,16 +2,16 @@
     position: fixed;
     top: 20px;
     right: 20px;
-    background: #ffb7b2; /* Pastel Pink */
+    background: #2c2833;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
   }
   
   form {
-    background: #ffb7b2; /* Pastel Pink */
+    background: #2c2833;
     max-width: 500px;
-    width: 100%; /* To make it responsive */
+    width: 100%;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
@@ -47,6 +47,8 @@
     cursor: pointer;
     font-size: 16px;
     font-weight: bold;
+    width: 100%;
+    margin-top: 10px; /* Add margin-top to adjust vertical alignment */
   }
   
   input[type="submit"]:hover {
