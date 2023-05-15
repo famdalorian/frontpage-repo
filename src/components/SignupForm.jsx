@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../styles/form.css";
+import  SignUp  from '../../src/ui-components/SignUp.jsx';
 
 const SignupForm = () => {
   const [firstName, setFirstName] = useState("");
@@ -19,7 +20,26 @@ const SignupForm = () => {
   if (!isVisible) {
     return <button onClick={() => setIsVisible(true)}>Sign Up</button>;
   }
-
+  <SignUp
+    onSubmit={(fields) => {
+      // Example function to trim all string inputs
+      const updatedFields = {};
+      Object.keys(fields).forEach((key) => {
+        if (typeof fields[key] === "string") {
+          updatedFields[key] = fields[key].trim();
+        } else {
+          updatedFields[key] = fields[key];
+        }
+      });
+      return updatedFields;
+    }}
+  />;
+  const handleImageChange = (event) => {
+    const file = event.target.files[0];
+    
+    // Perform operations with the selected image file
+    // For example, you can upload the image to a server, display a preview, etc.
+  };
   return (
     <div className="signup-form-container">
       <form onSubmit={handleSubmit}>
@@ -78,6 +98,8 @@ const SignupForm = () => {
           />
         </label>
         <input type="submit" value="Sign Up" />
+        <input type="file" accept="image/*" onChange={handleImageChange} />
+
       </form>
     </div>
   );

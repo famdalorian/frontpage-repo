@@ -11,7 +11,7 @@ function Article({ image, headline, subtext, link }) {
         <h2 className="article-headline">{headline}</h2>
         <p className="article-subtext">{subtext}</p>
         <a href={link} className="article-link">
-          Read More
+         Click Here...
         </a>
       </div>
     </div>
