@@ -1,18 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import "../styles/home.css";
-import XXISPSVG from "../assets/logo.svg"
+import 'animate.css';
+import SignupForm from "../components/SignupForm";
+
+
 
 function Home() {
+  const [showForm, setShowForm] = useState(true);
+
   return (
     <div className="title">
-      <div className="home-wrapper">
-        <h1 className="title-box">
-    
-        </h1>
-      </div>
-      
-     
-      <br></br>
+      {showForm && <SignupForm />}
+      <button onClick={() => setShowForm(!showForm)}>
+        {showForm ? 'Hide Sign Up Form' : 'Show Sign Up Form'}
+      </button>
+      {/* Rest of your home component */}
     </div>
   );
 }
