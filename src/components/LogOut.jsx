@@ -1,5 +1,6 @@
 import React from 'react';
 import { Auth } from 'aws-amplify';
+import "../styles/logout.css"
 
 function LogoutButton() {
   const handleLogout = async () => {
@@ -13,7 +14,7 @@ function LogoutButton() {
   };
 
   return (
-    <button onClick={handleLogout}>Logout</button>
+<button className="logout-button" onClick={handleLogout}>Logout</button>
   );
 }
 

@@ -1,0 +1,33 @@
+.hero-section {
+    background-color: #17151c;
+    padding: 80px 0;
+    text-align: center;
+  }
+  
+  .hero-title {
+    font-size: 32px;
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+  
+  .hero-description {
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 40px;
+  }
+  
+  .hero-button {
+    background-color: #ffb7b2;
+    color: #ffffff;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .hero-button:hover {
+    background-color: #ff9c91;
+  }
+  

@@ -1,0 +1,38 @@
+.herosection-right {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    flex-direction: row-reverse; /* This will reverse the order of the image and the content */
+  }
+  
+  .herosection-right-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  }
+  
+  .herosection-right-content {
+    flex: 1;
+    padding: 0 20px;
+  }
+  
+  .herosection-right-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 10px;
+  }
+  
+  .herosection-right-subheading {
+    font-size: 18px;
+    color: #ffb7b2;
+    margin-bottom: 20px;
+  }
+  
+  .herosection-right-paragraph {
+    font-size: 16px;
+    color: #ffffff;
+    line-height: 1.5;
+  }
+  

@@ -1,7 +1,7 @@
 import "./App.css";
 import { HashRouter, Routes, Route } from "react-router-dom";
 import Dashboard from "./Pages/Dashboard.jsx";
-import About from "./Pages/About.jsx";
+import About from "./Pages/Account.jsx";
 import CombatSports from "./Pages/CombatSports.jsx";
 import Contact from "./Pages/Contact.jsx";
 import Projects from "./Pages/Projects.jsx";
@@ -19,6 +19,10 @@ import awsExports from "./aws-exports";
 import UserInfo from "./components/UserInfo";
 import LogoutButton from "./components/LogOut";
 import LogIn from "./components/LogIn";
+import HeroSection from "./components/HeroSection";
+import HerosectionLeft from "./components/HerosectionLeft";
+import HerosectionRight from "./components/HerosectionRight";
+import NewsFeed from "./components/NewsFeed";
 Amplify.configure(awsExports);
 
 function App() {
@@ -46,8 +50,21 @@ function App() {
               <Route path="/merch" element={<Merch />} />
               <Route path="/writing" element={<Writing />} />
             </Routes>{" "}
-            {/* <LogIn />
-            <LogoutButton/> */}
+          <HeroSection/>
+          <HerosectionLeft
+  image={require("../src/assets/hero-image.jpg")}
+  title="Welcome to XXISP.eth"
+  subheading="Center of Excellence"
+  paragraph="At XXISP, we believe that true progress begins with disruptive thinking and relentless determination. Our founder, XXISP, has a proven track record of pushing boundaries and challenging the status quo. With a deep-rooted commitment to making a positive impact, XXISP has set out on an extraordinary mission to transform industries and create a better world for all."
+/>
+          <HerosectionRight
+  image={require("../src/assets/bus1.png")}
+  title="Welcome to XXISP.eth"
+  subheading="Center of Excellence"
+  paragraph="At XXISP, we believe that true progress begins with disruptive thinking and relentless determination. Our founder, XXISP, has a proven track record of pushing boundaries and challenging the status quo. With a deep-rooted commitment to making a positive impact, XXISP has set out on an extraordinary mission to transform industries and create a better world for all."
+/>
+<NewsFeed/>
+            <LogoutButton/>
             <UserInfo />
           </Sidebar>
         </HashRouter>{" "}
