@@ -243,7 +243,7 @@
     tinycolor2 "1.4.2"
     tslib "2.4.1"
 
-"@aws-amplify/ui@5.6.1":
+"@aws-amplify/ui@^5.6.1", "@aws-amplify/ui@5.6.1":
   version "5.6.1"
   resolved "https://registry.npmjs.org/@aws-amplify/ui/-/ui-5.6.1.tgz"
   integrity sha512-AQFvTdcpuT9g9iHHFdiZJBd1VRBzDN9RphqSUrHH+Pm7q0TertJSLDtQjmWpYtHduie+VGYnSqH8sXVF57oDog==

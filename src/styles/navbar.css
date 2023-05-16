@@ -1,0 +1,91 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #ffb7b2;
+ 
+}
+
+.navbar-brand {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.navbar-links ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 50px; /* Adjust the font size as needed for smaller screens */
+}
+
+.navbar-links li {
+  margin-right: 10px;
+}
+
+.navbar-link {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.navbar-user {
+  position: relative;
+}
+
+.navbar-user-icon {
+  font-size: 74px; /* Adjust the font size as needed for smaller screens */
+  margin-left: 10px;
+  cursor: pointer;
+  border-radius: 25%;
+ 
+}
+
+.navbar-user-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #ffffff;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  display: none;
+}
+
+.navbar-user:hover .navbar-user-menu {
+  display: block;
+}
+
+.navbar-user-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-user-link {
+  color: #333333;
+  text-decoration: none;
+  display: block;
+  padding: 5px 10px;
+}
+
+.navbar-user-link:hover {
+  background-color: #f1f1f1;
+}
+
+.navbar-logo-image {
+  height: 10vh;
+  width: 10vh;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  /* Adjust styles for smaller screens */
+  .navbar-links ul {
+    font-size: 14px;
+  }
+
+  .navbar-user-icon {
+    font-size: 20px;
+  }
+}
