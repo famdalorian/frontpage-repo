@@ -23,7 +23,6 @@ import HeroSection from "./components/HeroSection";
 import HerosectionLeft from "./components/HerosectionLeft";
 import HerosectionRight from "./components/HerosectionRight";
 import NewsFeed from "./components/NewsFeed";
-import Navbar from "./components/Navbar";
 Amplify.configure(awsExports);
 
 function App() {
@@ -36,12 +35,11 @@ function App() {
             <button onClick={signOut}>Sign out</button>
           </main>
         )}
-        <HashRouter>        <Navbar/>
-
+        <HashRouter>
           {" "}
           <Sidebar>
             <Routes>
-            <Route exact path="/" component={Home} />
+              <Route path="/" element={<Home />} />
               <Route path="/about" element={<About />} />
               <Route path="/about" element={<Dashboard />} />
               <Route path="/art" element={<Art />} />
