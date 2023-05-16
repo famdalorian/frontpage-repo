@@ -1,0 +1,94 @@
+.magic-login-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #17151c; /* Inverted color: Dark Grey */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  }
+  
+  .magic-login-container form {
+    background: #17151c; /* Inverted color: Dark Grey */
+    max-width: 500px;
+    width: 100%; /* To make it responsive */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  }
+  
+  .magic-login-container label {
+    display: block;
+    margin-bottom: 10px;
+    color: #ffffff;
+    font-weight: bold;
+  }
+  
+  .magic-login-container input[type="text"],
+  .magic-login-container input[type="email"],
+  .magic-login-container input[type="password"],
+  .magic-login-container input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #5d85a8; /* Inverted color: Light Blue */
+    border-radius: 4px;
+    margin-bottom: 10px;
+    background: #ffb7b2; /* Inverted color: Pastel Pink */
+    color: #6f57ae; /* Inverted color: Dark Grey */
+    font-size: 16px;
+  }
+  
+  .magic-login-container input[type="submit"] {
+    background: #17151c; /* Inverted color: Dark Grey */
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .magic-login-container input[type="submit"]:hover {
+    background: #ff9c91;
+  }
+  
+  .magic-login-container button,
+  .magic-login-container input[type="submit"] {
+    font-family: Arial, sans-serif;
+    background: #17151c; /* Inverted color: Dark Grey */
+    color: #ffffff;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    transition: all 0.3s ease;
+    overflow: hidden;
+  }
+  
+  .magic-login-container button:before,
+  .magic-login-container input[type="submit"]:before {
+    content: "";
+    background: rgba(255, 255, 255, 0.2);
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    transform: rotate(45deg) translate(-100%, -100%);
+    transition: all 0.3s ease;
+  }
+  
+  .magic-login-container button:hover:before,
+  .magic-login-container input[type="submit"]:hover:before {
+    transform: rotate(45deg) translate(0, 0);
+  }
+  
+  .magic-login-container button:hover,
+  .magic-login-container input[type="submit"]:hover {
+    background: #ff9c91;
+  }
+  
