@@ -29,7 +29,6 @@ Amplify.configure(awsExports);
 function App() {
   return (
     <div className="App">
-      <Authenticator>
         {({ signOut, user }) => (
           <main>
             <h1>Hello {user.username}</h1>
@@ -70,7 +69,6 @@ function App() {
             <UserInfo />
           </Sidebar>
         </HashRouter>{" "}
-      </Authenticator>
     </div>
   );
 }

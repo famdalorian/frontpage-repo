@@ -24,8 +24,8 @@ function Projects() {
       /> <br />
       <Article
         image={require("../assets/xxisp1.png")}
-        headline="IRL Community Project"
-        subtext="Keep Up To Date With Project XXisp"
+        headline="Project XXisp"
+        subtext="Keep Up To Date With Project XXisp, Our IRL community project."
         link={projectLink2}
       /> <br />
     </div>
