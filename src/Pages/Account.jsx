@@ -1,8 +1,11 @@
 import React from 'react'
+import ProfileForm from '../components/ProfileForm'
 
 function About() {
   return (
-    <div></div>
+    <div>
+      <ProfileForm />
+    </div>
   )
 }
 

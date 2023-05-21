@@ -21,6 +21,7 @@ import NewsFeed from "./components/NewsFeed";
 function App() {
   return (
     <div className="App">
+    
       <HashRouter>
         <Navbar />{" "}
         <Sidebar>
