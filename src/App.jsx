@@ -17,6 +17,7 @@ import HeroSection from "./components/HeroSection";
 import HerosectionLeft from "./components/HerosectionLeft";
 import HerosectionRight from "./components/HerosectionRight";
 import NewsFeed from "./components/NewsFeed";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -60,6 +61,7 @@ function App() {
           <LogoutButton />
         </Sidebar>
       </HashRouter>
+      <Footer/>
     </div>
   );
 }
