@@ -15,7 +15,14 @@ const SocialLogIn = () => {
         setIsLoggedIn(isLoggedIn);
 
         if (isLoggedIn) {
-          const metadata = await magic.user.getMetadata(console.log(metadata)); // Fetch the user's metadata
+          let metadata; // Declare the variable here
+
+          try {
+            metadata = await magic.user.getMetadata(); // Fetch the user's metadata
+          } catch (error) {
+            console.error('Error fetching user metadata:', error);
+          }
+
           setUserData(metadata);
         }
       } catch (error) {
@@ -24,7 +31,7 @@ const SocialLogIn = () => {
     };
 
     checkLoginStatus();
-  }, []);
+  }, [magic.user]);
 
   const handleSignIn = async () => {
     try {
@@ -54,25 +61,18 @@ const SocialLogIn = () => {
   if (isLoggedIn) {
     return (
       <div>
-  <button onClick={handleLogout}>Logout</button>
-  {userData && (
-   <div>
-   
-   {userData && (
-     <div>
-       <h3>User Data:</h3>
-       {userData.username && <p>Username: {userData.username}</p>}
-       {userData.publicAddress && <p>Public Eth Address: {userData.publicAddress}</p>}
-       {userData.userInfo && userData.userInfo.preferredUsername && (
-        
-         <p>Username: {userData.userInfo.preferredUsername}</p>
-       )}
-     </div>
-   )}
- </div>
- 
-  )}
-</div>
+        <button onClick={handleLogout}>Logout</button>
+        {userData && (
+          <div>
+            <h3>User Data:</h3>
+            {userData.username && <p>Username: {userData.username}</p>}
+            {userData.publicAddress && <p>Public Eth Address: {userData.publicAddress}</p>}
+            {userData.userInfo && userData.userInfo.preferredUsername && (
+              <p>Username: {userData.userInfo.preferredUsername}</p>
+            )}
+          </div>
+        )}
+      </div>
     );
   }
 
