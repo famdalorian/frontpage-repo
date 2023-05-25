@@ -1,5 +1,6 @@
 import React from 'react';
 import Article from '../components/Article';
+import Wordle from '../components/Wordle';  
 
 function Projects() {
   const projectLink = "https://SuperCoach.famdalorian.repl.co";
@@ -7,6 +8,7 @@ function Projects() {
 
   return (
     <div className="projects-wrapper">
+      <Wordle />
       <Article
         image={require("../assets/supercoach-image.png")}
         headline="SuperCoach Project"
