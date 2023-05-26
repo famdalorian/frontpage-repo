@@ -1,29 +1,21 @@
 import React, { useState, useEffect } from 'react';
 import { Magic } from 'magic-sdk';
-import "../styles/logout.css"
+import '../styles/logout.css';
 
 const SocialLogIn = () => {
   const [email, setEmail] = useState('');
   const [isLoggedIn, setIsLoggedIn] = useState(false);
-  const [userData, setUserData] = useState(null); // State to store the user data
-  const magic = new Magic('pk_live_71FB438198D67606'); // Replace with your Magic publishable API key
+  const [userData, setUserData] = useState(null);
+  const magic = new Magic('pk_live_71FB438198D67606');
 
   useEffect(() => {
-    // Check the user's login status here and update the isLoggedIn state accordingly
     const checkLoginStatus = async () => {
       try {
         const isLoggedIn = await magic.user.isLoggedIn();
         setIsLoggedIn(isLoggedIn);
 
         if (isLoggedIn) {
-          let metadata; // Declare the variable here
-
-          try {
-            metadata = await magic.user.getMetadata(); // Fetch the user's metadata
-          } catch (error) {
-            console.error('Error fetching user metadata:', error);
-          }
-
+          const metadata = await magic.user.getMetadata();
           setUserData(metadata);
         }
       } catch (error) {
@@ -32,11 +24,10 @@ const SocialLogIn = () => {
     };
 
     checkLoginStatus();
-  }, [magic.user]);
+  }, []);
 
   const handleSignIn = async () => {
     try {
-      // Send the login link to the provided email
       await magic.auth.loginWithMagicLink({ email });
       console.log('Magic link sent!');
     } catch (error) {
@@ -48,7 +39,7 @@ const SocialLogIn = () => {
     try {
       await magic.user.logout();
       setIsLoggedIn(false);
-      setUserData(null); // Clear the user data
+      setUserData(null);
       console.log('Logged out successfully!');
     } catch (error) {
       console.error('Error logging out:', error);
@@ -59,28 +50,41 @@ const SocialLogIn = () => {
     setEmail(event.target.value);
   };
 
-  if (isLoggedIn) {
-    return (
-      <div>
-        <button className='logout-button' onClick={handleLogout}>Logout</button>
-        {userData && (
-          <div>
-            <h3>User Data:</h3>
-            {userData.username && <p>Username: {userData.username}</p>}
-            {userData.publicAddress && <p>Public Eth Address: {userData.publicAddress}</p>}
-            {userData.userInfo && userData.userInfo.preferredUsername && (
-              <p>Username: {userData.userInfo.preferredUsername}</p>
+  return (
+    <div className="logout-container">
+      <div className="logout-content">
+        {isLoggedIn ? (
+          <div className="logout-user">
+            <button className="logout-button" onClick={handleLogout}>
+              Logout
+            </button>
+            {userData && (
+              <div className="user-data">
+                <h3>User Data:</h3>
+                {userData.username && <p>Username: {userData.username}</p>}
+                {userData.publicAddress && (
+                  <p>Public Eth Address: {userData.publicAddress}</p>
+                )}
+                {userData.userInfo && userData.userInfo.preferredUsername && (
+                  <p>Username: {userData.userInfo.preferredUsername}</p>
+                )}
+              </div>
             )}
+          </div>
+        ) : (
+          <div className="login-form">
+            <input
+              type="email"
+              value={email}
+              onChange={handleEmailChange}
+              placeholder="Enter your email"
+            />
+            <button className="logout-button" onClick={handleSignIn}>
+              Sign In
+            </button>
           </div>
         )}
       </div>
-    );
-  }
-
-  return (
-    <div>
-      <input type="email" value={email} onChange={handleEmailChange} placeholder="Enter your email" />
-      <button className='logout-button' onClick={handleSignIn}>Sign In</button>
     </div>
   );
 };

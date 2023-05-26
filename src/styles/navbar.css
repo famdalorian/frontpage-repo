@@ -4,7 +4,8 @@
   align-items: center;
   padding: 10px;
   background-color: #ffb7b2;
- 
+  position: relative;
+  height: 10vh;
 }
 
 .navbar-brand {
@@ -17,7 +18,7 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  font-size: 50px; /* Adjust the font size as needed for smaller screens */
+  font-size: 50px;
 }
 
 .navbar-links li {
@@ -30,15 +31,21 @@
 }
 
 .navbar-user {
-  position: relative;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 20px;
 }
 
 .navbar-user-icon {
-  font-size: 74px; /* Adjust the font size as needed for smaller screens */
-  margin-left: 10px;
+  font-size: 74px;
   cursor: pointer;
   border-radius: 25%;
- 
+  color: #17151c;
+  height: 5vh;
+  width: 5vh;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
 }
 
 .navbar-user-menu {
@@ -80,7 +87,6 @@
 
 /* Media Queries */
 @media (max-width: 768px) {
-  /* Adjust styles for smaller screens */
   .navbar-links ul {
     font-size: 14px;
   }
@@ -88,16 +94,4 @@
   .navbar-user-icon {
     font-size: 20px;
   }
-}
-
-.navbar-user {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-}
-
-.navbar-user-icon {
-  color: #17151c;
-  margin-left: 10vh; /* Add some spacing if needed */
-  /* Add other styles for the user icon */
 }

@@ -1,25 +1,43 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import styles from '../styles/NewsFeed.module.css'
+import styles from '../styles/NewsFeed.module.css';
+
+const generatePlaceholderImage = (nftName) => {
+  const nameWords = nftName.split(' ');
+  const initials = nameWords.reduce((acc, word) => acc + word.charAt(0), '');
+  const canvas = document.createElement('canvas');
+  const context = canvas.getContext('2d');
+  canvas.width = 100;
+  canvas.height = 100;
+  context.fillStyle = '#ff80bf';
+  context.fillRect(0, 0, canvas.width, canvas.height);
+  context.font = 'bold 24px sans-serif';
+  context.textAlign = 'center';
+  context.textBaseline = 'middle';
+  context.fillStyle = '#ffffff';
+  context.fillText(initials, canvas.width / 2, canvas.height / 2);
+  return canvas.toDataURL('image/png');
+};
+
 const NewsFeed = () => {
-  const [articles, setArticles] = useState([]);
-  const RAPIDAPI_KEY = process.env.REACT_APP_RAPIDAPI_KEY;
+  const [sales, setSales] = useState([]);
+  const [displayedSales, setDisplayedSales] = useState([]);
+  const [displayCount, setDisplayCount] = useState(10);
 
   useEffect(() => {
     const fetchData = async () => {
       const options = {
         method: 'GET',
-        url: 'https://crypto-news16.p.rapidapi.com/news/top/5',
+        url: 'https://top-nft-sales.p.rapidapi.com/sales/30d',
         headers: {
-          'x-rapidapi-key': RAPIDAPI_KEY,
-          'x-rapidapi-host': 'crypto-news16.p.rapidapi.com'
-        }
+          'X-RapidAPI-Key': '5954b34e8dmsh63c37f8644a88d3p147d34jsn5e3844d4fbed',
+          'X-RapidAPI-Host': 'top-nft-sales.p.rapidapi.com',
+        },
       };
 
       try {
         const response = await axios.request(options);
-        setArticles(response.data);
-        console.log(response.data);
+        setSales(response.data);
       } catch (error) {
         console.error(error);
       }
@@ -28,23 +46,45 @@ const NewsFeed = () => {
     fetchData();
   }, []);
 
+  useEffect(() => {
+    setDisplayedSales(sales.slice(0, displayCount));
+  }, [sales, displayCount]);
+
+  const handleLoadMore = () => {
+    setDisplayCount(displayCount + 10);
+  };
+
   return (
-    <div className={styles.newsFeedContainer}>
-        <h1>Crypto Updates</h1>
-      <h2 className={styles.newsFeedTitle}>Latest News</h2>
-      <div className={styles.newsFeedItems}>
-        {articles.map((article, index) => (
-          <div className={styles.newsFeedItem} key={index}>
-            <div className={styles.imageWrapper}>
-              <img className={styles.articleImage} src={article.image} alt="Article" />
+    <div className={styles.dashboardContainer}>
+      <h1 className={styles.title}>Crypto Updates</h1>
+      <div className={styles.salesContainer}>
+        <h2 className={styles.sectionTitle}>Latest Sales</h2>
+        {displayedSales.map((sale, index) => (
+          <div className={styles.saleItem} key={index}>
+            <div className={styles.thumbnail}>
+              <img
+                src={sale.image || generatePlaceholderImage(sale.nft_name)}
+                alt="Thumbnail"
+              />
             </div>
-            <div className={styles.articleContent}>
-              <h3 className={styles.articleTitle}>{article.title}</h3>
-              <p className={styles.articleDescription}>{article.description}</p>
-              <a href={article.url} className={styles.articleLink}>Read More</a>
+            <div className={styles.saleDetails}>
+              <h3 className={styles.nftName}>{sale.nft_name}</h3>
+              <p className={styles.collection}>
+                Collection: <a href={sale.collection_url}>{sale.collection}</a>
+              </p>
+              <p className={styles.date}>Date: {sale.date}</p>
+              <p className={styles.price}>Price: {sale.price}</p>
+              <a href={sale.nft_url} className={styles.readMoreLink}>
+                Read More
+              </a>
             </div>
           </div>
         ))}
+        {displayedSales.length < sales.length && (
+          <button className={styles.loadMoreButton} onClick={handleLoadMore}>
+            Load More
+          </button>
+        )}
       </div>
     </div>
   );

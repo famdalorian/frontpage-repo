@@ -18,14 +18,17 @@ import HerosectionLeft from "./components/HerosectionLeft";
 import HerosectionRight from "./components/HerosectionRight";
 import NewsFeed from "./components/NewsFeed";
 import Footer from "./components/Footer";
-import SocialLogIn from "./components/SocialLogIn";
+// import SocialLogIn from "./components/SocialLogIn";
+import SecondLogin from "./components/SecondLogin";
 
 function App() {
   return (
     <div className="App">
+      <SecondLogin />
       <HashRouter>
         <Navbar />{" "}
-        <Sidebar>            <SocialLogIn />
+        <Sidebar>
+                      {/* <SocialLogIn /> */}
 
           <Routes>
             {" "}
@@ -64,6 +67,7 @@ function App() {
         </Sidebar>
       </HashRouter>
       <Footer />
+   
     </div>
   );
 }
