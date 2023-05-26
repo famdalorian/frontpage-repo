@@ -1,12 +1,12 @@
-import React from "react";
-import "../styles/navbar.css"
-import SocialLogIn from "./SocialLogIn";
+import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUser } from '@fortawesome/free-solid-svg-icons';
+import '../styles/navbar.css';
+
 const Navbar = ({ logout }) => {
   return (
     <nav className="navbar">
       <div className="navbar-user">
-        {/* User icon and menu */}
-        <i className="fa fa-user navbar-user-icon" aria-hidden="true"></i>
         <div className="navbar-user-menu">
           <ul>
             <li>
@@ -20,8 +20,9 @@ const Navbar = ({ logout }) => {
             </li>
           </ul>
         </div>
-      </div>      <SocialLogIn />
-
+        {/* User icon */}
+        <FontAwesomeIcon icon={faUser} className="navbar-user-icon" />
+      </div>      
     </nav>
   );
 };

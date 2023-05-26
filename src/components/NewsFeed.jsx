@@ -36,7 +36,7 @@ const NewsFeed = () => {
         {articles.map((article, index) => (
           <div className={styles.newsFeedItem} key={index}>
             <div className={styles.imageWrapper}>
-              {/* <img className={styles.articleImage} src={article.image} alt="Article" /> */}
+              <img className={styles.articleImage} src={article.image} alt="Article" />
             </div>
             <div className={styles.articleContent}>
               <h3 className={styles.articleTitle}>{article.title}</h3>

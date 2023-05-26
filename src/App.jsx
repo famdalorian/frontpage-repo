@@ -18,14 +18,17 @@ import HerosectionLeft from "./components/HerosectionLeft";
 import HerosectionRight from "./components/HerosectionRight";
 import NewsFeed from "./components/NewsFeed";
 import Footer from "./components/Footer";
+import SocialLogIn from "./components/SocialLogIn";
 
 function App() {
   return (
     <div className="App">
       <HashRouter>
         <Navbar />{" "}
-        <Sidebar>
+        <Sidebar>            <SocialLogIn />
+
           <Routes>
+            {" "}
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<Account />} />
             <Route path="/dashboard" element={<Dashboard />} />
@@ -60,7 +63,7 @@ function App() {
           <LogoutButton />
         </Sidebar>
       </HashRouter>
-      <Footer/>
+      <Footer />
     </div>
   );
 }

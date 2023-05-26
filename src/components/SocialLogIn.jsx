@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Magic } from 'magic-sdk';
+import "../styles/logout.css"
 
 const SocialLogIn = () => {
   const [email, setEmail] = useState('');
@@ -61,7 +62,7 @@ const SocialLogIn = () => {
   if (isLoggedIn) {
     return (
       <div>
-        <button onClick={handleLogout}>Logout</button>
+        <button className='logout-button' onClick={handleLogout}>Logout</button>
         {userData && (
           <div>
             <h3>User Data:</h3>
@@ -79,7 +80,7 @@ const SocialLogIn = () => {
   return (
     <div>
       <input type="email" value={email} onChange={handleEmailChange} placeholder="Enter your email" />
-      <button onClick={handleSignIn}>Sign In</button>
+      <button className='logout-button' onClick={handleSignIn}>Sign In</button>
     </div>
   );
 };
