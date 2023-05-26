@@ -1,9 +1,17 @@
 body {
   font-family: Arial, sans-serif;
   background-color: #f8e6e7; /* Baby pink */
-  color: #545454; /* Dark font */
-  margin: 0; /* Add this to remove default body margin */
+  color: #f8e6e7; /* Dark font */
+  border: none;
 }
+// i want to remove the border from the body
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
 
 .container {
   display: flex;
@@ -84,7 +92,3 @@ body {
   }
 }
 
-body {
-  background: #545454; /* Dark background color */
-  color: #ffffff; /* White text color */
-}

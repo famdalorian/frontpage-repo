@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "../styles/wordle.css"
+import "../styles/wordle.css";
 
 const Wordle = () => {
   const [guesses, setGuesses] = useState([]);
@@ -102,7 +102,7 @@ const Wordle = () => {
       const color = isCorrect ? "green" : "gray";
       const correctLetters = getCorrectLetters(guess);
       return (
-        <div key={index} style={{ backgroundColor: color }}>
+        <div key={index} className={`wordle-guess ${isCorrect ? "correct" : ""}`} style={{ backgroundColor: color }}>
           {guess} - {correctLetters} correct letters
         </div>
       );
@@ -120,18 +120,19 @@ const Wordle = () => {
   };
 
   return (
-    <div>
-      <h1>Wordle</h1>
+    <div className="wordle-container">
+      <h1 className="wordle-heading">Wordle</h1>
       <p>Guess the five-letter word.</p>
-      <div>{renderGuesses()}</div>
+      <div className="wordle-guesses">{renderGuesses()}</div>
       <input
         type="text"
+        className="wordle-input"
         placeholder="Enter your guess"
         onChange={(event) => {
           setGuesses((prevGuesses) => [...prevGuesses, event.target.value]);
         }}
       />
-      <button onClick={() => handleCorrectGuess(guesses[guesses.length - 1])}>
+      <button className="wordle-button" onClick={() => handleCorrectGuess(guesses[guesses.length - 1])}>
         Check
       </button>
     </div>

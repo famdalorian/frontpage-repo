@@ -12,10 +12,7 @@ import Writing from "./Pages/Writing";
 import Sidebar from "./components/Sidebar";
 import Merch from "./Pages/Merch";
 import Home from "./Pages/Home";
-// import HeroSection from "./components/HeroSection";
-// import HerosectionLeft from "./components/HerosectionLeft";
-// import HerosectionRight from "./components/HerosectionRight";
-import NewsFeed from "./components/NewsFeed";
+
 import Footer from "./components/Footer";
 function App() {
   return (
@@ -39,7 +36,7 @@ function App() {
             <Route path="/writing" element={<Writing />} />
           </Routes>
 
-          <NewsFeed />
+         
         </Sidebar>
       </HashRouter>
       <Footer />

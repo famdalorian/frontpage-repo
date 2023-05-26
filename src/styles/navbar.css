@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
+  border: none;
   background-color: #ffb7b2;
   position: relative;
   height: 10vh;
@@ -41,7 +41,7 @@
   font-size: 74px;
   cursor: pointer;
   border-radius: 25%;
-  color: #17151c;
+  color: #545454;
   height: 5vh;
   width: 3vh;
   margin-top: 2vh;
@@ -53,9 +53,9 @@
   position: absolute;
   top: 100%;
   right: 0;
-  background-color: #17151c;
+  background-color: #545454;
   border-radius: 4px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
   padding: 10px;
   display: none;
 }
@@ -99,6 +99,6 @@
   }
 }
 .icon-wrapper {
-color: #000000;
+color: #545454;
   height: 9vh;
 }

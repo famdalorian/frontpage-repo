@@ -11,7 +11,7 @@ function Home() {
     <div className="homepageContainer">
       <div className="heroContainer">
         <HeroSection
-          image={require("../assets/Project.png")}
+          image={require("../assets/xxisp-crest.png")}
           title="We Can Make The World Glow"
         />
        

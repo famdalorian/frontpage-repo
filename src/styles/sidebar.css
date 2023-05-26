@@ -88,6 +88,8 @@ main {
 }
 
 body {
-  background: #545454; /* Dark background color */
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: #545454; /* Dark theme color */
   color: #ffffff; /* White text color */
 }
