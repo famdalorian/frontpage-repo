@@ -12,23 +12,18 @@ import Writing from "./Pages/Writing";
 import Sidebar from "./components/Sidebar";
 import Merch from "./Pages/Merch";
 import Home from "./Pages/Home";
-import LogoutButton from "./components/LogOut";
-import HeroSection from "./components/HeroSection";
-import HerosectionLeft from "./components/HerosectionLeft";
-import HerosectionRight from "./components/HerosectionRight";
+// import HeroSection from "./components/HeroSection";
+// import HerosectionLeft from "./components/HerosectionLeft";
+// import HerosectionRight from "./components/HerosectionRight";
 import NewsFeed from "./components/NewsFeed";
 import Footer from "./components/Footer";
-// import SocialLogIn from "./components/SocialLogIn";
-import SecondLogin from "./components/SecondLogin";
-
 function App() {
   return (
     <div className="App">
-      <SecondLogin />
       <HashRouter>
         <Navbar />{" "}
         <Sidebar>
-                      {/* <SocialLogIn /> */}
+          
 
           <Routes>
             {" "}
@@ -44,30 +39,10 @@ function App() {
             <Route path="/writing" element={<Writing />} />
           </Routes>
 
-          <HeroSection
-            image={require("../src/assets/hero-image.jpg")}
-            title="Welcome to XXISP.eth"
-            subheading="Center of Excellence"
-            paragraph="At XXISP, we believe that true progress begins with disruptive thinking and relentless determination. Our founder, XXISP, has a proven track record of pushing boundaries and challenging the status quo. With a deep-rooted commitment to making a positive impact, XXISP has set out on an extraordinary mission to transform industries and create a better world for all."
-          />
-          <HerosectionLeft
-            image={require("../src/assets/bus1.png")}
-            title="Welcome to XXISP.eth"
-            subheading="Center of Excellence"
-            paragraph="At XXISP, we believe that true progress begins with disruptive thinking and relentless determination. Our founder, XXISP, has a proven track record of pushing boundaries and challenging the status quo. With a deep-rooted commitment to making a positive impact, XXISP has set out on an extraordinary mission to transform industries and create a better world for all."
-          />
-          <HerosectionRight
-            image={require("../src/assets/bus1.png")}
-            title="Welcome to XXISP.eth"
-            subheading="Center of Excellence"
-            paragraph="At XXISP, we believe that true progress begins with disruptive thinking and relentless determination. Our founder, XXISP, has a proven track record of pushing boundaries and challenging the status quo. With a deep-rooted commitment to making a positive impact, XXISP has set out on an extraordinary mission to transform industries and create a better world for all."
-          />
           <NewsFeed />
-          <LogoutButton />
         </Sidebar>
       </HashRouter>
       <Footer />
-   
     </div>
   );
 }

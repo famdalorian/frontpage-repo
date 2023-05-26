@@ -22,7 +22,7 @@ const generatePlaceholderImage = (nftName) => {
 const NewsFeed = () => {
   const [sales, setSales] = useState([]);
   const [displayedSales, setDisplayedSales] = useState([]);
-  const [displayCount, setDisplayCount] = useState(10);
+  const [displayCount, setDisplayCount] = useState(3);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -51,7 +51,7 @@ const NewsFeed = () => {
   }, [sales, displayCount]);
 
   const handleLoadMore = () => {
-    setDisplayCount(displayCount + 10);
+    setDisplayCount(displayCount + 3);
   };
 
   return (

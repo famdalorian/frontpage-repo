@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FaBars, FaTimes, FaTh, FaUser, FaTshirt, FaBitcoin, FaPen, FaAccessibleIcon, FaCode, FaVoicemail, FaPaintBrush, FaFighterJet, FaAdversal, FaThermometerThreeQuarters, FaRunning } from "react-icons/fa";
+import { FaBars, FaTimes, FaTh, FaUser, FaTshirt, FaBitcoin, FaPen,  FaCode, FaVoicemail, FaPaintBrush,  FaRunning, FaHome } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 import "../styles/sidebar.css";
 
@@ -10,6 +10,11 @@ function Sidebar({ children }) {
     setIsOpen(!isOpen);
   };
   const menuItem = [
+    {
+      path: "/",
+      name: "Home",
+      icon: <FaHome />,
+    },
     {
       path: "/dashboard",
       name: "Dashboard",

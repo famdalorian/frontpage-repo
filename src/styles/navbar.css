@@ -43,16 +43,17 @@
   border-radius: 25%;
   color: #17151c;
   height: 5vh;
-  width: 5vh;
+  width: 3vh;
   margin-top: 2vh;
   margin-bottom: 2vh;
+  border-right: 4vh;
 }
 
 .navbar-user-menu {
   position: absolute;
   top: 100%;
   right: 0;
-  background-color: #ffffff;
+  background-color: #17151c;
   border-radius: 4px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 10px;
@@ -70,10 +71,12 @@
 }
 
 .navbar-user-link {
-  color: #333333;
+
   text-decoration: none;
   display: block;
   padding: 5px 10px;
+  color: #ffb7b2;
+
 }
 
 .navbar-user-link:hover {
@@ -94,4 +97,8 @@
   .navbar-user-icon {
     font-size: 20px;
   }
+}
+.icon-wrapper {
+color: #000000;
+  height: 9vh;
 }

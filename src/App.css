@@ -1,7 +1,8 @@
 body {
   font-family: Arial, sans-serif;
   background-color: #f8e6e7; /* Baby pink */
-  color: #0f0f0f; /* Dark font */
+  color: #545454; /* Dark font */
+  margin: 0; /* Add this to remove default body margin */
 }
 
 .container {
@@ -13,15 +14,15 @@ body {
   flex: 1;
   background-color: #aee6fa; /* Baby blue */
   padding: 20px;
+  overflow-x: hidden; /* Add this to prevent horizontal scrolling */
 }
 
-.logo {
-  display: none;
-}
+
 
 .sidebar {
   width: 50px;
   transition: width 0.3s ease-in-out;
+  z-index: 1; /* Add this to ensure the sidebar is on top */
 }
 
 .sidebar-open {
@@ -34,6 +35,7 @@ body {
   justify-content: space-between;
   width: 50px;
   transition: width 0.3s ease-in-out;
+  z-index: 2; /* Add this to ensure the top section is on top */
 }
 
 .top_section-open {
@@ -51,6 +53,7 @@ body {
 
 .link_text {
   display: none;
+  color: #ffb7b2;
 }
 
 .link_text-open {
@@ -58,7 +61,30 @@ body {
   margin-left: 10px;
   font-weight: bold;
 }
+
+@media (max-width: 768px) {
+  /* Adjust styles for smaller screens */
+  .container {
+    flex-direction: column;
+  }
+
+  .sidebar,
+  .top_section {
+    width: 200px;
+  }
+
+  .bars {
+    margin-left: 10px;
+  }
+
+  .link_text {
+    display: block;
+    margin-left: 10px;
+    font-weight: bold;
+  }
+}
+
 body {
-  background: #17151c; /* Dark background color */
+  background: #545454; /* Dark background color */
   color: #ffffff; /* White text color */
 }

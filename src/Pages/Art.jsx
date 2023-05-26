@@ -1,5 +1,6 @@
 import React from "react";
 import Article from "../components/Article";
+import "../styles/art.css";
 
 function Art() {
   return (

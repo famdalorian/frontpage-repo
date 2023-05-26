@@ -1,7 +1,8 @@
-import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUser } from '@fortawesome/free-solid-svg-icons';
-import '../styles/navbar.css';
+import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faUser } from "@fortawesome/free-solid-svg-icons";
+import "../styles/navbar.css";
+import SocialLogIn from "./SocialLogIn";
 
 const Navbar = ({ logout }) => {
   return (
@@ -10,19 +11,26 @@ const Navbar = ({ logout }) => {
         <div className="navbar-user-menu">
           <ul>
             <li>
+              <SocialLogIn />
               <a href="/Profile">Profile</a>
             </li>
             <li>
               <a href="/Settings">Settings</a>
             </li>
             <li>
-              <a href="Logout" onClick={logout}>Logout</a>
+              <a href="Logout" onClick={logout}>
+                Logout
+              </a>
             </li>
           </ul>
         </div>
-        {/* User icon */}
-        <FontAwesomeIcon icon={faUser} className="navbar-user-icon" />
-      </div>      
+       
+        <div className="icon-wrapper">
+          <FontAwesomeIcon icon={faUser} className="navbar-user-icon" />
+         Log-In
+        </div>
+    
+      </div>
     </nav>
   );
 };
