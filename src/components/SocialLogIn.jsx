@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Magic } from 'magic-sdk';
+import "../styles/form.css"
 
 const magic = new Magic("pk_live_A2C1FC5327BEC218", { network: 'mainnet' });
 
