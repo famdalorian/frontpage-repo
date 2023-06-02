@@ -6,6 +6,7 @@
   background-color: #ffb7b2;
   position: relative;
   height: 10vh;
+  z-index: 9999;
 }
 
 .navbar-brand {
@@ -35,6 +36,7 @@
   top: 50%;
   transform: translateY(-50%);
   right: 20px;
+
 }
 
 .navbar-user-icon {
@@ -54,7 +56,6 @@
   top: 100%;
   right: 0;
   background-color: #17151c;
-  border-radius: 4px;
   box-shadow: 3px 4px 4px grey;
   padding: 10px;
  
@@ -62,6 +63,8 @@
 
 .navbar-user:hover .navbar-user-menu {
   display: block;
+  border-radius: 17.5px;
+
 }
 
 .navbar-user-menu ul {
@@ -107,7 +110,8 @@ a,.NavLinks{
   font-size: 20px;
   font-weight: bold;
   text-decoration: none;
-}.navbar-user-menu {
+}
+.navbar-user-menu {
   position: absolute;
   top: 100%;
   right: 0;
@@ -116,6 +120,7 @@ a,.NavLinks{
   box-shadow: 3px 4px 4px grey;
   padding: 10px;
   display: none; /* Add this line to hide the menu by default */
+  z-index: 9999; /* Add a higher z-index value */
 }
 
 .navbar-user:hover .navbar-user-menu {

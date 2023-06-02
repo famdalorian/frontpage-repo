@@ -1,33 +1,36 @@
-@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
-.tabs {
-    display: flex;
-    justify-content: space-between;
-    animation:animate__wobble 5s;
-  
-    font-size: larger;
-    font-weight: 750;
-    text-shadow: 2px 2px 4px #000000;
-    font-family: permanent marker;
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
 
-  }
-  
-  .tab {
-    width: 33.33%;
-    text-align: center;
-    animation: animate__shakeY 0.5s;
-  }
-  
-  .tab-image {
-    max-width: 100%;
-    transition: transform 0.7s;
-box-shadow: 10px 10px 5px grey;
-border-radius: 50%;
+.tabs {
+  display: flex;
+  justify-content: space-between;
+  animation: animate__wobble 5s;
+  font-size: larger;
+  font-weight: 750;
+  text-shadow: 2px 2px 4px #feb9c9;
+  box-shadow: 2px 2px 4px #545454;
+  font-family: "Permanent Marker", cursive;
+  border-radius: 25px;
+  background-color: #62dce4;
 }
-  
-  .tab-image:hover {
-    cursor: pointer;
-    animation: animate__shakeY 0.5s;
-  }
-  p{
-    color: #65dfe7  ;
-  }
+
+.tab {
+  width: 33.33%;
+  text-align: center;
+  animation: animate__shakeY 0.5s;
+}
+
+.tab-image {
+  max-width: 100%;
+  transition: transform 0.7s;
+  border-radius: 50%;
+}
+
+.tab-image:hover {
+  cursor: pointer;
+  animation: animate__shakeY 0.5s;
+}
+
+.tab-text {
+  color: #545454;
+  font-size: 25px;
+}

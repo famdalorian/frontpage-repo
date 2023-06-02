@@ -9,6 +9,8 @@ function Home() {
   return (
     <div className="homepageContainer">
       <Tabs className="tabs"/>
+      <br />
+      <br />
       <div className="herosectionLeftContainer">
         <HerosectionLeft
           image={require("../assets/MT_mind.png")}
