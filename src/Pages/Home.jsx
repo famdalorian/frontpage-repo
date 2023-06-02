@@ -2,11 +2,13 @@ import React from "react";
 import "../styles/home.css";
 import HerosectionLeft from "../components/HerosectionLeft";
 import HerosectionRight from "../components/HerosectionRight";
+import Tabs from "../components/Tabs";
 function Home() {
  
 
   return (
     <div className="homepageContainer">
+      <Tabs className="tabs"/>
       <div className="herosectionLeftContainer">
         <HerosectionLeft
           image={require("../assets/MT_mind.png")}
