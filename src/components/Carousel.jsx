@@ -10,15 +10,15 @@ import "pure-react-carousel/dist/react-carousel.es.css";
 import "../styles/home.css";
 
 import image1 from "../assets/1.jpg";
-import image2 from "../assets/shorts_xxisp.png";
-import image3 from "../assets/shorts_xxisp_1.png";
-import image4 from "../assets/shorts_xxisp_2.png";
+import image2 from "../assets/hero-image.jpg";
+import image3 from "../assets/eyedinal.png";
+import image4 from "../assets/ape1.png";
 
 const Carousel = () => {
   return (
     <CarouselProvider
       naturalSlideWidth={100}
-      naturalSlideHeight={125}
+      naturalSlideHeight={100}
       totalSlides={4}
     >
       <Slider id="mySlider">

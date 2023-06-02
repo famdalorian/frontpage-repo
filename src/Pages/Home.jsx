@@ -1,18 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 import "../styles/home.css";
-import HeroSection from "../components/HeroSection";
 import HerosectionLeft from "../components/HerosectionLeft";
 import HerosectionRight from "../components/HerosectionRight";
-
 function Home() {
  
 
   return (
     <div className="homepageContainer">
-      <div className="heroContainer">
-     
-       
-      </div>
       <div className="herosectionLeftContainer">
         <HerosectionLeft
           image={require("../assets/MT_mind.png")}

@@ -107,4 +107,17 @@ a,.NavLinks{
   font-size: 20px;
   font-weight: bold;
   text-decoration: none;
+}.navbar-user-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #17151c;
+  border-radius: 4px;
+  box-shadow: 3px 4px 4px grey;
+  padding: 10px;
+  display: none; /* Add this line to hide the menu by default */
+}
+
+.navbar-user:hover .navbar-user-menu {
+  display: block; /* Show the menu when the parent is hovered */
 }
