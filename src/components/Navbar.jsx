@@ -22,11 +22,7 @@ const Navbar = ({ logout }) => {
             <li >
               <Link className="Navlinks" to="/Settings">Settings</Link>
             </li>
-            <li >
-              <Link className="Navlinks" to="Logout" onClick={logout}>
-                Logout
-              </Link>
-            </li>
+          
           </ul>
         </div>
 
