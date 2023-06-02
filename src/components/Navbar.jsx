@@ -4,13 +4,13 @@ import { faUser } from "@fortawesome/free-solid-svg-icons";
 import { Link } from 'react-router-dom';
 import "../styles/navbar.css";
 import SocialLogIn from "./SocialLogIn";
-import logo from '../assets/xxisp-crest.png';
+import logo from '../../src/assets/image1.png';
 
 const Navbar = ({ logout }) => {
   return (
-    <nav className="navbar">
+    <nav className="navbar">        <img classname="navbar-logo-image "src={logo} alt="logo" />
+
       <div className="logo">
-        <img src={logo} alt="logo" />
       </div>
       <div className="navbar-user">
         <div className="navbar-user-menu">
