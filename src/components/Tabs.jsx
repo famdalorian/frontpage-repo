@@ -18,12 +18,12 @@ const Tabs = () => {
           <a href={links[index]} target="_blank" rel="noopener noreferrer">
             <p className="tab-text animate__animated animate__bounceInDown">
               {tabtext[index]}
-            </p>
+           
             <img
               className="tab-image animate__animated animate__shakeX"
               src={image}
               alt={`tab-${index + 1}`}
-            />
+            /> </p>
           </a>
         </div>
       ))}
