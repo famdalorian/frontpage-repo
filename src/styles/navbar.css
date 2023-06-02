@@ -53,11 +53,11 @@
   position: absolute;
   top: 100%;
   right: 0;
-  background-color: #545454;
+  background-color: #17151c;
   border-radius: 4px;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 3px 4px 4px grey;
   padding: 10px;
-  display: none;
+ 
 }
 
 .navbar-user:hover .navbar-user-menu {
@@ -101,4 +101,10 @@
 .icon-wrapper {
 color: #545454;
   height: 9vh;
+}
+a,.NavLinks{
+  color:pink;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
 }

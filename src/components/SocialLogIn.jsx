@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
-import { Magic } from 'magic-sdk';
-import "../styles/form.css"
+import React, { useState } from "react";
+import { Magic } from "magic-sdk";
+import "../styles/form.css";
 
-const magic = new Magic("pk_live_A2C1FC5327BEC218", { network: 'mainnet' });
+const magic = new Magic("pk_live_A2C1FC5327BEC218", { network: "mainnet" });
 
 function SocialLogIn() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -16,7 +16,7 @@ function SocialLogIn() {
         console.log(accounts);
       }
     } catch (error) {
-      console.error('An error occurred:', error);
+      console.error("An error occurred:", error);
     }
   }
 
@@ -25,20 +25,22 @@ function SocialLogIn() {
       // if the user is already logged in, show the wallet widget
       await magic.wallet.showUI();
       // Request user information
-      const emailInfo = await magic.wallet.requestUserInfoWithUI({ scope: { email: "required" }});
+      const emailInfo = await magic.wallet.requestUserInfoWithUI({
+        scope: { email: "required" },
+      });
       console.log(emailInfo.email); // the user's email if they consented.
     } catch (error) {
-      console.error('An error occurred:', error);
+      console.error("An error occurred:", error);
     }
   }
 
   async function disconnectWallet() {
     try {
       await magic.wallet.disconnect();
-      setIsLoggedIn(false);  // Update isLoggedIn state
+      setIsLoggedIn(false); // Update isLoggedIn state
       console.log("Disconnected from wallet");
     } catch (error) {
-      console.error('An error occurred while disconnecting:', error);
+      console.error("An error occurred while disconnecting:", error);
     }
   }
 
@@ -48,7 +50,12 @@ function SocialLogIn() {
       {isLoggedIn && (
         <>
           <button onClick={showWallet}>Display Wallet</button>
+          <br />
+          <br />
+
           <button onClick={disconnectWallet}>Disconnect Wallet</button>
+          <br />
+          <br />
         </>
       )}
     </div>

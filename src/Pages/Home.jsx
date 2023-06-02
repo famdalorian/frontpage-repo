@@ -10,10 +10,7 @@ function Home() {
   return (
     <div className="homepageContainer">
       <div className="heroContainer">
-        <HeroSection
-          image={require("../assets/xxisp-crest.png")}
-          title="We Can Make The World Glow"
-        />
+     
        
       </div>
       <div className="herosectionLeftContainer">

@@ -1,36 +1,41 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
+import { Link } from 'react-router-dom';
 import "../styles/navbar.css";
 import SocialLogIn from "./SocialLogIn";
+import logo from '../assets/xxisp-crest.png';
 
 const Navbar = ({ logout }) => {
   return (
     <nav className="navbar">
+      <div className="logo">
+        <img src={logo} alt="logo" />
+      </div>
       <div className="navbar-user">
         <div className="navbar-user-menu">
-          <ul>
-            <li>
+          <ul> 
+            <li >
               <SocialLogIn />
-              <a href="/Profile">Profile</a>
+              <Link className="Navlinks" to="/Profile">Profile</Link>
             </li>
-            <li>
-              <a href="/Settings">Settings</a>
+            <li >
+              <Link className="Navlinks" to="/Settings">Settings</Link>
             </li>
-            <li>
-              <a href="Logout" onClick={logout}>
+            <li >
+              <Link className="Navlinks" to="Logout" onClick={logout}>
                 Logout
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
-       
+
         <div className="icon-wrapper">
           <FontAwesomeIcon icon={faUser} className="navbar-user-icon" />
-         Log-In
+          Log-In
         </div>
-    
       </div>
+        
     </nav>
   );
 };
