@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Magic } from "magic-sdk";
 import "../styles/form.css";
-import image1 from "../assets/image1.png";
 
 const magic = new Magic("pk_live_A2C1FC5327BEC218", { network: "mainnet" });
 
@@ -47,7 +46,7 @@ function SocialLogIn() {
 
   return (
     <div>
-      {!isLoggedIn && <button onClick={connectWallet}>Connect Wallet</button>}
+      {!isLoggedIn && <button onClick={connectWallet}>Connect</button>}
       {isLoggedIn && (
         <>
           <button onClick={showWallet}>Wallet
