@@ -3,6 +3,8 @@
   padding: 20px;
   border-radius: 25px;
   box-shadow:  10px 10px 10px #17151c;
+  border: #17151c   2px solid;
+
 }
 
 .herosection-left-container {
@@ -18,6 +20,11 @@
 
 .herosection-left-content {
   width: 50%;
+  text-shadow: 1px 1px 1px #feb9c9;
+  box-shadow: 2px 2px 4px #545454;
+  color: #17151c;
+
+  font-family: "Permanent Marker", cursive;
 }
 
 .herosection-left-title {

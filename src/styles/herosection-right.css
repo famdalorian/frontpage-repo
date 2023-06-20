@@ -1,8 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+
 .herosection-right-wrapper {
+  box-shadow:  10px 10px 10px #17151c;
+
   background-color: #545454;
   padding: 20px;
   border-radius: 25px;
-  box-shadow: 10px 10px 10px #17151c;
+  text-shadow: 2px 2px 4px #feb9c9;
+  font-family: "Permanent Marker", cursive;
+  border: #17151c   2px solid;
+
 }
 
 .herosection-right-container {
@@ -13,12 +20,17 @@
 .herosection-right {
   display: flex;
   align-items: center;
+  
 }
 
 .herosection-right-content {
   width: 50%;
   order: 2;
   margin-left: 50px; /* Add some spacing */
+  color: #17151c;
+  text-shadow: 1px 1px 1px #feb9c9;
+  box-shadow: 2px 2px 4px #545454;
+  font-family: "Permanent Marker", cursive;
 }
 
 .herosection-right-title {
