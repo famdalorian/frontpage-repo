@@ -12,6 +12,7 @@ import Writing from "./Pages/Writing";
 import Sidebar from "./components/Sidebar";
 import Merch from "./Pages/Merch";
 import Home from "./Pages/Home";
+import TimeTable from './components/TimeTable'
 
 import Footer from "./components/Footer";
 function App() {
@@ -34,6 +35,7 @@ function App() {
             <Route path="/web3" element={<Web3 />} />
             <Route path="/merch" element={<Merch />} />
             <Route path="/writing" element={<Writing />} />
+            <Route path="/timetable" element={<TimeTable />} />
           </Routes>
 
          

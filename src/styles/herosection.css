@@ -1,6 +1,8 @@
 .heroContainer {
   color: transparent;
   padding: 20px;
+  box-shadow:  2px 2px silver;
+
 }
 
 .heroSection {
@@ -35,9 +37,13 @@
 .heroTitle {
   font-size: 24px;
   margin-bottom: 10px;
+  /* Additional styles to match */
+  text-shadow: 2px 2px 4px rgba(254, 185, 201, 0.7);
 }
 
 .heroDescription {
   font-size: 16px;
   margin-bottom: 10px;
+  /* Additional styles to match */
+  text-shadow: 2px 2px 4px rgba(254, 185, 201, 0.7);
 }

@@ -91,3 +91,7 @@ h1 {
   }
 }
 
+.App{
+  display: flex;
+  justify-content: center;
+}

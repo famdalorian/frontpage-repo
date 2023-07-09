@@ -1,15 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
 
 .herosection-right-wrapper {
-  box-shadow:  10px 10px 10px #17151c;
-
-  background-color: #545454;
+  background-color: #1f2833;
   padding: 20px;
-  border-radius: 25px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 4px #545454;
+  border: 2px solid #17151c;
   text-shadow: 2px 2px 4px #feb9c9;
   font-family: "Permanent Marker", cursive;
-  border: #17151c   2px solid;
-
 }
 
 .herosection-right-container {
@@ -20,15 +18,14 @@
 .herosection-right {
   display: flex;
   align-items: center;
-  
 }
 
 .herosection-right-content {
   width: 50%;
   order: 2;
-  margin-left: 50px; /* Add some spacing */
-  color: #17151c;
-  text-shadow: 1px 1px 1px #feb9c9;
+  margin-left: 50px;
+  color: #fefefe;
+  text-shadow: 2px 2px 4px #feb9c9;
   box-shadow: 2px 2px 4px #545454;
   font-family: "Permanent Marker", cursive;
 }
@@ -36,9 +33,9 @@
 .herosection-right-title {
   font-size: 42px;
   margin-bottom: 10px;
-  color: #17151c;
+  color: #fefefe;
   text-decoration: underline;
-  text-shadow: #ffb7b2 2px 2px 2px;
+  text-shadow: 2px 2px 4px #ffb7b2;
 }
 
 .herosection-right-subheading {
@@ -62,7 +59,7 @@
   max-width: 100%;
   height: auto;
   border-radius: 25px;
-  box-shadow: #ffb7b2 2px 2px 2px;
+  box-shadow: 2px 2px 4px #ffb7b2;
 }
 
 @media (max-width: 768px) {
@@ -74,7 +71,7 @@
   .herosection-right-image {
     width: 100%;
     order: initial;
-    padding-right: 0; /* Reset the padding for smaller screens */
-    padding-left: 0; /* Reset the padding for smaller screens */
+    padding-right: 0;
+    padding-left: 0;
   }
 }

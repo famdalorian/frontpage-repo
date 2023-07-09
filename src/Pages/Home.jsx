@@ -4,11 +4,11 @@ import HerosectionLeft from "../components/HerosectionLeft";
 import HerosectionRight from "../components/HerosectionRight";
 import Tabs from "../components/Tabs";
 function Home() {
- 
-
   return (
     <div className="homepageContainer">
-      <Tabs className="tabs"/>
+      
+<br></br>
+    
       <br />
       <br />
       <div className="herosectionLeftContainer">
@@ -25,8 +25,8 @@ function Home() {
           title="Be the best you!"
           subheading="Mentality Forge"
           paragraph="At XXISP, we embrace the power of bold ideas and unwavering resolve as catalysts for genuine advancement. Our visionary leader, XXISP, has consistently shattered conventional norms and redefined possibilities. With an unwavering dedication to driving positive change, XXISP embarks on an extraordinary journey to revolutionize industries and forge a brighter future for everyone."
-        />
-      </div>
+        />  
+      </div><Tabs className="tabs" />
     </div>
   );
 }

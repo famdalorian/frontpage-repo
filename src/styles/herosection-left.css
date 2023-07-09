@@ -1,10 +1,9 @@
 .herosection-left-wrapper {
-  background-color: #545454;
+  background-color: #1f2833;
   padding: 20px;
-  border-radius: 25px;
-  box-shadow:  10px 10px 10px #17151c;
-  border: #17151c   2px solid;
-
+  border-radius: 10px;
+  box-shadow: 2px 2px 4px #545454;
+  border: 2px solid #545454;
 }
 
 .herosection-left-container {
@@ -20,19 +19,18 @@
 
 .herosection-left-content {
   width: 50%;
-  text-shadow: 1px 1px 1px #feb9c9;
+  text-shadow: 2px 2px 4px rgba(254, 185, 201, 0.7);
   box-shadow: 2px 2px 4px #545454;
-  color: #17151c;
-
+  color: #fefefe;
   font-family: "Permanent Marker", cursive;
 }
 
 .herosection-left-title {
   font-size: 42px;
   margin-bottom: 10px;
-  color: #17151c;
+  color: #fefefe;
   text-decoration: underline;
-  text-shadow: #ffb7b2 2px 2px 2px;
+  text-shadow: 2px 2px 4px rgba(254, 185, 201, 0.7);
 }
 
 .herosection-left-subheading {
@@ -54,6 +52,6 @@
 .herosection-left-image img {
   max-width: 100%;
   height: auto;
-  border-radius: 25px;
-  box-shadow: #ffb7b2 2px 2px 2px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 4px rgba(254, 185, 201, 0.7);
 }

@@ -1,0 +1,83 @@
+.combat-sports-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  
+  .combat-sports-title {
+    font-size: 42px;
+    color: #fefefe;
+    text-shadow: 2px 2px 4px rgba(254, 185, 201, 0.7);
+  }
+  
+  .combat-sports-options {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    margin-top: 40px;
+  }
+  
+  .combat-sports-option {
+    background-color: #1f2833;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px #545454;
+  }
+  
+  .combat-sports-option-title {
+    font-size: 24px;
+    color: #fefefe;
+    margin-bottom: 10px;
+  }
+  
+  .combat-sports-option-description {
+    font-size: 16px;
+    color: #fefefe;
+    margin-bottom: 10px;
+  }
+  
+  .combat-sports-option-link {
+    display: inline-block;
+    background-color: #62dce4;
+    color: #fefefe;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  
+  .combat-sports-option-link:hover {
+    background-color: #45c0cc;
+  }
+  
+  .combat-sports-media {
+    margin-top: 40px;
+  }
+  
+  .combat-sports-media-title {
+    font-size: 24px;
+    color: #fefefe;
+    margin-bottom: 10px;
+  }
+  
+  .combat-sports-media-description {
+    font-size: 16px;
+    color: #fefefe;
+    margin-bottom: 10px;
+  }
+  
+  .combat-sports-media-link {
+    display: inline-block;
+    background-color: #62dce4;
+    color: #fefefe;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  
+  .combat-sports-media-link:hover {
+    background-color: #45c0cc;
+  }
+  

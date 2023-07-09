@@ -1,0 +1,46 @@
+.timetable-container {
+    background-color: #1f2833;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px #545454;
+    color: #fefefe;
+    font-family: "Roboto Condensed", sans-serif;
+  }
+  
+  .timetable-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .timetable-table th,
+  .timetable-table td {
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .timetable-table th {
+    background-color: #62dce4;
+    font-weight: 700;
+  }
+  
+  .timetable-table tbody tr:nth-child(even) {
+    background-color: #1d2b2e;
+  }
+  
+  .timetable-table tbody td {
+    border-top: 1px solid #62dce4;
+  }
+  
+  .timetable-table tbody tr:last-child td {
+    border-bottom: 1px solid #62dce4;
+  }
+  
+  .timetable-table td:first-child {
+    font-weight: 700;
+  }
+  
+  .timetable-table td:not(:first-child) {
+    text-transform: capitalize;
+  }
+  

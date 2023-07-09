@@ -1,16 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap");
 
 .tabs {
   display: flex;
   justify-content: space-between;
   animation: animate__wobble 5s;
-  font-size: larger;
-  font-weight: 750;
-  text-shadow: 2px 2px 4px #feb9c9;
+  font-size: 18px;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(254, 185, 201, 0.7);
   box-shadow: 2px 2px 4px #545454;
-  font-family: "Permanent Marker", cursive;
-  border-radius: 25px;
-  background-color: #62dce4;
+  font-family: "Roboto Condensed", sans-serif;
+  border-radius: 10px;
+  background-color: #1f2833;
+  color: #fefefe;
 }
 
 .tab {
@@ -31,6 +32,23 @@
 }
 
 .tab-text {
-  color: #545454;
-  font-size: 25px;
+  color: #fefefe;
+  font-size: 20px;
+}
+
+.Tabs-container {
+  border: #545454 12px solid;
+  border-radius: 50px;
+}
+
+h1 {
+  animation: animate__wobble 5s;
+  font-size: 28px;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(254, 185, 201, 0.7);
+  box-shadow: 2px 2px 4px #545454;
+  font-family: "Roboto Condensed", sans-serif;
+  border-radius: 10px;
+  background-color: #1f2833;
+  color: #fefefe;
 }

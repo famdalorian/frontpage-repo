@@ -1,35 +1,38 @@
-.carousel-wrapper{
-    display: flex;
-flex-direction: row;
+.carousel-wrapper {
+  display: flex;
+  flex-direction: row;
 }
-.slide1{
-    background-image: url(../assets/1.jpg);
+
+.slide1 {
+  background-image: url(../assets/1.jpg);
 }
-.title{
-    display: flex;
-    justify-content: center;
+
+.title {
+  display: flex;
+  justify-content: center;
 }
-.supercoach{
-    width: 33vw;
-    height: 89vh;
+
+.supercoach {
+  width: 33vw;
+  height: 89vh;
 }
+
 .homepageContainer {
-    background-color: #ffb9c9;
-    padding: 20px;
-    border-radius: 25px;
-  }
-  
-  .heroContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 40px;
-  }
-  
-  .herosectionLeftContainer,
-  .herosectionRightContainer {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 40px;
-  }
- 
+  background-color: #3e526b;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.heroContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.herosectionLeftContainer,
+.herosectionRightContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
