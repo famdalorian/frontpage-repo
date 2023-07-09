@@ -1,67 +1,46 @@
 .writing-container {
-    max-width: 900px;
-    margin: 0 auto;
-  }
-  
-  .writing-wrapper {
-    padding: 20px;
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .writing {
-    font-size: 24px;
-    font-weight: bold;
-    color: #333333;
-    margin-bottom: 20px;
-  }
-  
-  .writing-blurb {
-    margin-bottom: 20px;
-  }
-  
-  .blurb {
-    font-size: 16px;
-    line-height: 1.5;
-    color: #555555;
-  }
-  
-  .articles {
-    margin-top: 20px;
-  }
-  
-  .writing-link {
-    display: block;
-    font-size: 18px;
-    color: #007bff;
-    text-decoration: none;
-    margin-bottom: 10px;
-  }
-  
-  .writing-link:hover {
-    text-decoration: underline;
-  }
-  .writing-wrapper {
-    text-align: center;
-    margin-top: 50px;
-  }
-  
-  .writing-wrapper {
-    text-align: center;
-    margin-top: 50px;
-  }
-  
-  .writing {
-    font-size: 28px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    color: #ffddb3; /* Gold */
-  }
-  
-  .blurb {
-    font-size: 16px;
-    line-height: 1.5;
-    color: #a2d2ff; /* Baby Blue */
-  }
-  
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.writing-wrapper {
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-top: 50px;
+}
+
+.writing {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #ffddb3; /* Gold */
+}
+
+.writing-blurb {
+  margin-bottom: 20px;
+}
+
+.blurb {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #a2d2ff; /* Baby Blue */
+}
+
+.articles {
+  margin-top: 20px;
+}
+
+.writing-link {
+  display: block;
+  font-size: 18px;
+  color: #007bff;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+.writing-link:hover {
+  text-decoration: underline;
+}

@@ -1,18 +1,17 @@
 .heroContainer {
   color: transparent;
   padding: 20px;
-  box-shadow:  2px 2px silver;
-
+  box-shadow: 2px 2px silver;
 }
 
 .heroSection {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
 }
 
 .heroImageContainer {
-  width: 50%;
+  width: 100%;
 }
 
 .heroImageWrapper {
@@ -27,7 +26,8 @@
 }
 
 .heroContentContainer {
-  width: 50%;
+  width: 100%;
+  text-align: center;
 }
 
 .heroContentWrapper {
@@ -46,4 +46,18 @@
   margin-bottom: 10px;
   /* Additional styles to match */
   text-shadow: 2px 2px 4px rgba(254, 185, 201, 0.7);
+}
+
+@media (min-width: 768px) {
+  .heroSection {
+    flex-direction: row;
+  }
+
+  .heroImageContainer {
+    width: 50%;
+  }
+
+  .heroContentContainer {
+    width: 50%;
+  }
 }

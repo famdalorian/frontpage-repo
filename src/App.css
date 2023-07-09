@@ -11,7 +11,6 @@ h1 {
   margin: 0;
 }
 
-
 .container {
   display: flex;
   min-height: 100vh;
@@ -23,8 +22,6 @@ h1 {
   padding: 20px;
   overflow-x: hidden; /* Add this to prevent horizontal scrolling */
 }
-
-
 
 .sidebar {
   width: 50px;
@@ -69,6 +66,11 @@ h1 {
   font-weight: bold;
 }
 
+.App {
+  display: flex;
+  justify-content: center;
+}
+
 @media (max-width: 768px) {
   /* Adjust styles for smaller screens */
   .container {
@@ -89,9 +91,4 @@ h1 {
     margin-left: 10px;
     font-weight: bold;
   }
-}
-
-.App{
-  display: flex;
-  justify-content: center;
 }

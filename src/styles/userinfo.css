@@ -1,32 +1,48 @@
 .userInfo-container {
-    background-color: #2c2833;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  background-color: #2c2833;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.userInfo-title {
+  color: #ffb7b2;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.userInfo-field {
+  color: #ffffff;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.userInfo-field-label {
+  font-weight: bold;
+}
+
+.userInfo-loading {
+  color: #ffffff;
+}
+
+.userInfo-error {
+  color: #ff6150;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .userInfo-container {
+    font-size: 14px;
+    padding: 10px;
   }
-  
+
   .userInfo-title {
-    color: #ffb7b2;
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 10px;
+    font-size: 20px;
   }
-  
+
   .userInfo-field {
-    color: #ffffff;
-    font-size: 16px;
-    margin-bottom: 5px;
+    font-size: 14px;
+    margin-bottom: 3px;
   }
-  
-  .userInfo-field-label {
-    font-weight: bold;
-  }
-  
-  .userInfo-loading {
-    color: #ffffff;
-  }
-  
-  .userInfo-error {
-    color: #ff6150;
-  }
-  
+}

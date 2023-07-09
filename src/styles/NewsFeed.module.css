@@ -64,3 +64,35 @@
 .readMoreLink:hover {
   text-decoration: underline;
 }
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .dashboardContainer {
+    padding: 10px;
+  }
+
+  .title {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .sectionTitle {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+
+  .nftName {
+    font-size: 16px;
+    margin-bottom: 4px;
+  }
+
+  .date {
+    font-size: 14px;
+    margin-bottom: 4px;
+  }
+
+  .price {
+    font-size: 14px;
+    margin-bottom: 4px;
+  }
+}

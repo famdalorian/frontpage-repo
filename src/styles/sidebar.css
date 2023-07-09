@@ -34,7 +34,7 @@
 
 .bars {
   font-size: 20px;
-  color:#545454;
+  color: #545454;
   cursor: pointer;
 }
 
@@ -92,4 +92,23 @@ body {
   font-family: "Roboto", sans-serif;
   background-color: #545454; /* Dark theme color */
   color: #ffffff; /* White text color */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 80px;
+  }
+
+  .sidebar-open {
+    width: 250px;
+  }
+
+  .logo {
+    font-size: 16px;
+  }
+
+  .link_text-open {
+    font-size: 12px;
+  }
 }

@@ -1,46 +1,59 @@
 .logout-button {
-    background-color: #ffb7b2; /* Pastel Pink */
-    color: #ffffff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-  }
-  
-  .logout-button:hover {
-    background-color: #ff9c91;
-  }
+  background-color: #ffb7b2; /* Pastel Pink */
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+  background-color: #ff9c91;
+}
+
+.logout-container {
+  background-color: #545454;
+  padding: 20px;
+}
+
+.logout-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logout-user {
+  text-align: center;
+}
+
+.user-data {
+  margin-top: 20px;
+  color: #fff;
+  text-align: center;
+}
+
+.login-form {
+  text-align: center;
+}
+
+input[type='email'] {
+  padding: 10px;
+  margin-right: 10px;
+}
+
+@media (max-width: 768px) {
   .logout-container {
-    background-color: #545454;
-    padding: 20px;
+    padding: 10px;
   }
-  
+
   .logout-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .logout-user {
-    text-align: center;
+    flex-direction: column;
   }
 
   .user-data {
-    margin-top: 20px;
-    color: #fff;
-    text-align: center;
+    margin-top: 10px;
   }
-  
-  .login-form {
-    text-align: center;
-  }
-  
-  input[type='email'] {
-    padding: 10px;
-    margin-right: 10px;
-  }
-  
-  
+}

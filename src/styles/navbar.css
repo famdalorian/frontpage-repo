@@ -36,7 +36,6 @@
   top: 50%;
   transform: translateY(-50%);
   right: 20px;
-
 }
 
 .navbar-user-icon {
@@ -58,13 +57,13 @@
   background-color: #17151c;
   box-shadow: 3px 4px 4px grey;
   padding: 10px;
- 
+  display: none;
+  border-radius: 4px;
+  z-index: 9999;
 }
 
 .navbar-user:hover .navbar-user-menu {
   display: block;
-  border-radius: 17.5px;
-
 }
 
 .navbar-user-menu ul {
@@ -74,12 +73,10 @@
 }
 
 .navbar-user-link {
-
   text-decoration: none;
   display: block;
   padding: 5px 10px;
   color: #ffb7b2;
-
 }
 
 .navbar-user-link:hover {
@@ -94,7 +91,6 @@
   border: 2px solid #545454;
   padding: 5px;
   box-shadow: 1px 1px 5px hotpink;
-  
 }
 
 /* Media Queries */
@@ -106,29 +102,8 @@
   .navbar-user-icon {
     font-size: 20px;
   }
-}
-.icon-wrapper {
-color: #545454;
-  height: 9vh;
-}
-a,.NavLinks{
-  color:pink;
-  font-size: 20px;
-  font-weight: bold;
-  text-decoration: none;
-}
-.navbar-user-menu {
-  position: absolute;
-  top: 100%;
-  right: 0;
-  background-color: #17151c;
-  border-radius: 4px;
-  box-shadow: 3px 4px 4px grey;
-  padding: 10px;
-  display: none; /* Add this line to hide the menu by default */
-  z-index: 9999; /* Add a higher z-index value */
-}
-
-.navbar-user:hover .navbar-user-menu {
-  display: block; /* Show the menu when the parent is hovered */
+  
+  .navbar-user-menu {
+    top: 120%;
+  }
 }

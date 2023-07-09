@@ -18,7 +18,6 @@ function Home() {
 
   return (
     <div className="homepageContainer">
-      <img></img>
       <br />
       <br />
       <div className="herosectionLeftContainer">
@@ -54,6 +53,8 @@ function Home() {
           />
         )}
       </div>
+
+
       <Tabs className="tabs" />
     </div>
   );

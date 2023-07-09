@@ -13,16 +13,19 @@
 }
 
 .supercoach {
-  width: 33vw;
-  height: 89vh;
+  width: 100%;
+  height: auto;
+  max-width: 33vw;
+  max-height: 89vh;
 }
 
 .homepageContainer {
   background-color: #3e526b;
   padding: 20px;
   border-radius: 10px;
-display: flex;
-flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  width: auto;
 }
 
 .heroContainer {
@@ -30,11 +33,38 @@ flex-direction: column;
   flex-direction: column;
   align-items: center;
   margin-bottom: 40px;
+  
 }
 
 .herosectionLeftContainer,
 .herosectionRightContainer {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   margin-bottom: 40px;
+
+}
+.homediv{
+  display: flex;
+  flex-direction: row;
+
+}
+.moreInfoButton{
+}
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .carousel-wrapper {
+    flex-direction: column;
+  }
+
+  .supercoach {
+    max-width: 100%;
+    max-height: none;
+    width: 100%;
+    height: auto;
+  }
+
+  .herosectionLeftContainer,
+  .herosectionRightContainer {
+    flex-direction: column;
+  }
 }

@@ -16,16 +16,17 @@
 
 .herosection-right {
   display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
 .herosection-right-content {
-  width: 50%;
-  order: 2;
-  margin-left: 50px;
+  width: 100%;
+  margin: 20px 0;
   color: #fefefe;
   text-shadow: 2px 2px 4px #feb9c9;
   font-family: "Permanent Marker", cursive;
+  text-align: center;
 }
 
 .herosection-right-title {
@@ -49,9 +50,8 @@
 }
 
 .herosection-right-image {
-  width: 50%;
+  width: 100%;
   text-align: center;
-  order: 1;
 }
 
 .herosection-right-image img {
@@ -62,15 +62,9 @@
 }
 
 @media (max-width: 768px) {
-  .herosection-right {
-    flex-direction: column;
-  }
-
   .herosection-right-content,
   .herosection-right-image {
     width: 100%;
-    order: initial;
-    padding-right: 0;
-    padding-left: 0;
+    margin: 20px 0;
   }
 }
