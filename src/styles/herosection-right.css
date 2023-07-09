@@ -4,7 +4,6 @@
   background-color: #1f2833;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 2px 2px 4px #545454;
   border: 2px solid #17151c;
   text-shadow: 2px 2px 4px #feb9c9;
   font-family: "Permanent Marker", cursive;
@@ -26,7 +25,6 @@
   margin-left: 50px;
   color: #fefefe;
   text-shadow: 2px 2px 4px #feb9c9;
-  box-shadow: 2px 2px 4px #545454;
   font-family: "Permanent Marker", cursive;
 }
 
@@ -36,6 +34,7 @@
   color: #fefefe;
   text-decoration: underline;
   text-shadow: 2px 2px 4px #ffb7b2;
+  box-shadow: none;
 }
 
 .herosection-right-subheading {

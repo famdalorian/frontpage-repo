@@ -2,7 +2,6 @@
   background-color: #1f2833;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 2px 2px 4px #545454;
   border: 2px solid #545454;
 }
 
@@ -20,7 +19,6 @@
 .herosection-left-content {
   width: 50%;
   text-shadow: 2px 2px 4px rgba(254, 185, 201, 0.7);
-  box-shadow: 2px 2px 4px #545454;
   color: #fefefe;
   font-family: "Permanent Marker", cursive;
 }
@@ -54,4 +52,7 @@
   height: auto;
   border-radius: 10px;
   box-shadow: 2px 2px 4px rgba(254, 185, 201, 0.7);
+}
+h1, .herosection-left-title{
+  box-shadow: none;
 }
