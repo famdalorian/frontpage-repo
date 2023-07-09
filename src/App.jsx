@@ -13,6 +13,7 @@ import Sidebar from "./components/Sidebar";
 import Merch from "./Pages/Merch";
 import Home from "./Pages/Home";
 import TimeTable from './components/TimeTable'
+import Classes from "./Pages/Classes";
 
 import Footer from "./components/Footer";
 function App() {
@@ -36,6 +37,8 @@ function App() {
             <Route path="/merch" element={<Merch />} />
             <Route path="/writing" element={<Writing />} />
             <Route path="/timetable" element={<TimeTable />} />
+            <Route path="/classes" element={<Classes />} />
+
           </Routes>
 
          
