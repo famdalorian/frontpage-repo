@@ -1,9 +1,4 @@
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f8e6e7; /* Baby pink */
-  color: #f8e6e7; /* Dark font */
-  border: none;
-}
+
 
 h1 {
   font-size: 1.5rem;
@@ -11,10 +6,30 @@ h1 {
   margin: 0;
 }
 
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8e6e7; /* Baby pink */
+  color: #f8e6e7; /* Dark font */
+  border: none;
+  margin: 0; /* Add this to remove default body margin */
+  padding: 0; /* Add this to remove default body padding */
+}
+
 .container {
   display: flex;
   min-height: 100vh;
+  justify-content: center; /* Center the content horizontally */
 }
+
+.home-wrapper {
+  flex: 1;
+  background-color: #aee6fa; /* Baby blue */
+  padding: 20px;
+  overflow-x: hidden; /* Add this to prevent horizontal scrolling */
+  max-width: 100%; /* Ensure the content doesn't exceed the screen width */
+}
+
+/* Rest of your CSS code... */
 
 .home-wrapper {
   flex: 1;

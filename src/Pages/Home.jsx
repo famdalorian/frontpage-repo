@@ -4,6 +4,8 @@ import HerosectionLeft from "../components/HerosectionLeft";
 import HerosectionRight from "../components/HerosectionRight";
 import Tabs from "../components/Tabs";
 
+import Herosection from "../components/HeroSection";
+
 function Home() {
   const [showHerosectionLeft, setShowHerosectionLeft] = useState(false);
   const [showHerosectionRight, setShowHerosectionRight] = useState(false);
@@ -18,12 +20,21 @@ function Home() {
 
   return (
     <div className="homepageContainer">
+      {" "}
+      <Herosection
+        image={require("../assets/xxisp-crest.png")}
+        title="Welcome to Project XXisp!"
+        description="XXISP is a community-driven project focused on creating a vibrant community space that encompasses an MMA and Muay Thai gym. Our goal is to foster a strong sense of community by not only providing fitness and combat sports training but also by investing in local projects for urban regeneration. We aim to support initiatives like the development of a skate park or a bar/cafe that will contribute to job creation, promote health and fitness, and encourage accountability and creativity. Furthermore, we are dedicated to integrating technology into the gym experience, bridging the gap between the fitness world and the tech industry. Join us on this exciting journey at XXISP!"
+      />
       <br />
       <br />
       <div className="herosectionLeftContainer">
         <button className="moreInfoButton" onClick={handleHerosectionLeftClick}>
-        <img src={require("../assets/PJX_MMA.png")} alt="More Info" className="moreInfoIcon" />
-
+          <img
+            src={require("../assets/PJX_MMA.png")}
+            alt="More Info"
+            className="moreInfoIcon"
+          />
           <h1>Who are we?</h1>
           More Info
         </button>
@@ -38,9 +49,15 @@ function Home() {
       </div>
       <br></br>
       <div className="herosectionRightContainer">
-        <button className="moreInfoButton" onClick={handleHerosectionRightClick}>
-        <img src={require("../assets/PJX_S&C.png")} alt="More Info" className="moreInfoIcon" />
-
+        <button
+          className="moreInfoButton"
+          onClick={handleHerosectionRightClick}
+        >
+          <img
+            src={require("../assets/PJX_S&C.png")}
+            alt="More Info"
+            className="moreInfoIcon"
+          />
           <h1>What is this??</h1>
           More Info
         </button>
@@ -53,8 +70,6 @@ function Home() {
           />
         )}
       </div>
-
-
       <Tabs className="tabs" />
     </div>
   );

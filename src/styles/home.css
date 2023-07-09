@@ -48,8 +48,7 @@
   flex-direction: row;
 
 }
-.moreInfoButton{
-}
+
 /* Responsive Styles */
 @media (max-width: 768px) {
   .carousel-wrapper {
