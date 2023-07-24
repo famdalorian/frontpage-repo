@@ -1,0 +1,78 @@
+.Merch {
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  font-size: 34px;
+  margin-bottom: 20px;
+}
+
+.MerchSections {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.MerchSection {
+  width: calc(33.33% - 20px);
+  background-color: #bca3c1;
+  padding: 20px;
+  border-radius: 24px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.MerchSection h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.Product {
+  margin-bottom: 20px;
+}
+
+.Product img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.Product h2 {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.Product p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #fff;
+  color: #000;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ccc;
+}
+.MerchImage{
+  max-width: 23vw;
+  max-height: 23vh;
+  border-radius: 25px;
+}
+.BuyButton{
+  max-width: 13vh;
+  max-height: 13vh;
+}
+a,h3{
+  text-decoration: none;
+  color: #008080;
+}

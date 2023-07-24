@@ -3,9 +3,7 @@ import "../styles/home.css";
 import HerosectionLeft from "../components/HerosectionLeft";
 import HerosectionRight from "../components/HerosectionRight";
 import Tabs from "../components/Tabs";
-
 import Herosection from "../components/HeroSection";
-
 function Home() {
   const [showHerosectionLeft, setShowHerosectionLeft] = useState(false);
   const [showHerosectionRight, setShowHerosectionRight] = useState(false);
@@ -20,7 +18,7 @@ function Home() {
 
   return (
     <div className="homepageContainer">
-      {" "}
+    
       <Herosection
         image={require("../assets/xxisp-crest.png")}
         title="Welcome to Project XXisp!"
@@ -43,11 +41,11 @@ function Home() {
             image={require("../assets/MT_mind.png")}
             title="Welcome to Project XXisp!"
             subheading="Center of Excellence"
-            paragraph="At XXISP, we believe that true progress begins with disruptive thinking and relentless determination. Our founder, XXISP, has a proven track record of pushing boundaries and challenging the status quo. With a deep-rooted commitment to making a positive impact, XXISP has set out on an extraordinary mission to transform industries and create a better world for all."
+            paragraph="We believe that true progress begins with disruptive thinking and relentless determination. Our founder, XXISP, has a proven track record of pushing boundaries and challenging the status quo. With a deep-rooted commitment to making a positive impact, XXISP has set out on an extraordinary mission to transform industries and create a better world for all."
           />
         )}
       </div>
-      <br></br>
+      <br />
       <div className="herosectionRightContainer">
         <button
           className="moreInfoButton"

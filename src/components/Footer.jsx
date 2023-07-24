@@ -8,7 +8,7 @@ const Footer = () => {
         <a href="https://discord.gg/ZvZeEgJyjR" target="_blank" rel="noopener noreferrer">
           <FaDiscord className="footer-icon" />
         </a>
-        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+        <a href="https://instagram.com/projectxxisp" target="_blank" rel="noopener noreferrer">
           <FaInstagram className="footer-icon" />
         </a>
       </div>

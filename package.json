@@ -28,7 +28,8 @@
     "scss": "^0.2.4",
     "styled-components": "^5.3.11",
     "web-vitals": "^2.1.4",
-    "web3": "^1.10.0"
+    "web3": "^1.10.0",
+    "windows98-lib": "^0.1.1"
   },
   "scripts": {
     "start": "react-scripts start",

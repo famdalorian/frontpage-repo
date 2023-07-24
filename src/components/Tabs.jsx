@@ -9,11 +9,12 @@ import { Magic } from "magic-sdk"; // Import the Magic object
 
 const Tabs = () => {
   const images = [image1, image2, image3]; // Now using imported images
-  const tabtext = ["Project XXisp", "XXisp-Wallet", "XXisp Market"];
+  const tabtext = ["Project XXisp", "XXisp-Wallet", "XXisp Market(under constructrion)"];
   const links = [
     "https://projectxxisp.com",
     showWallet, // Use the function reference instead of a URL
-    "https://market.xxisp.uk",
+    // "https://market.xxisp.uk" 
+    'https://projectxxisp.com',
   ];
 
   const magic = new Magic("pk_live_A2C1FC5327BEC218", { network: "mainnet" }); // Initialize the magic object
