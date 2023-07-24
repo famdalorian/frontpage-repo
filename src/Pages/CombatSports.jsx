@@ -38,6 +38,14 @@ const CombatSports = () => {
             Discover More
           </Link>
         </div>
+        <div className="combat-sports-option">
+          <h2 className="combat-sports-option-title">Memberships</h2>
+          <p className="combat-sports-option-description">
+explore our membership packages, for IRL and URL          </p>
+          <Link className="combat-sports-option-link" to="/memberships">
+            Discover More
+          </Link>
+        </div>
       </div>
 
       <div className="combat-sports-media">

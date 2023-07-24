@@ -141,22 +141,12 @@ const Classes = () => {
           <div className="class-content">
             <h2 className="class-name">Kids Class</h2>
             <p className="class-description">
-              Step into the realm of elite training with our Fighters Class.
-              Designed for dedicated individuals seeking to enhance their combat
-              skills, this class is tailored for fighters of all levels. Led by
-              experienced coaches, you'll embark on a specialized training
-              program that focuses on refining technique, improving strength and
-              conditioning, and honing mental fortitude. Our Fighters Class
-              incorporates a combination of striking, grappling, and
-              high-intensity conditioning exercises to elevate your performance
-              inside the ring or cage. You'll learn advanced techniques, develop
-              fight strategies, and engage in intense sparring sessions to
-              sharpen your skills. Under the guidance of our knowledgeable
-              instructors, you'll receive personalized attention and tailored
-              training plans to meet your specific goals. Whether you're a
-              professional fighter or aspiring to compete, our Fighters Class
-              will push you to your limits and help you reach new levels of
-              success.
+
+Designed for young warriors seeking to enhance their combat skills, this class is tailored for kids of all levels. Led by experienced coaches, your child will embark on a specialized training program that focuses on refining technique, improving strength and conditioning, and honing mental fortitude. Our Kids Class incorporates a combination of striking, grappling, and high-energy conditioning exercises to elevate their performance and confidence.
+
+Your child will learn advanced techniques, develop strategic thinking, and engage in exciting sparring sessions to sharpen their skills. Under the guidance of our knowledgeable instructors, they will receive personalized attention and tailored training plans to meet their specific goals.
+
+Whether your child is looking to explore martial arts or has aspirations to compete, our Kids Class will encourage them to push their boundaries and achieve new levels of success while fostering camaraderie and discipline in a safe and supportive environment.
             </p>
             <a href="/class3" className="class-button">
               More Info

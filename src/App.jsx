@@ -14,6 +14,7 @@ import Merch from "./Pages/Merch";
 import Home from "./Pages/Home";
 import TimeTable from './components/TimeTable'
 import Classes from "./Pages/Classes";
+import Memberships from "./Pages/Memberships";
 
 import Footer from "./components/Footer";
 function App() {
@@ -38,6 +39,7 @@ function App() {
             <Route path="/writing" element={<Writing />} />
             <Route path="/timetable" element={<TimeTable />} />
             <Route path="/classes" element={<Classes />} />
+            <Route path="/memberships" element={<Memberships />} />
 
           </Routes>
 
