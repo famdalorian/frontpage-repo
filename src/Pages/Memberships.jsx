@@ -46,14 +46,14 @@ const Memberships = () => {
       />
       <MembershipTier
         title="Kids Membership"
-        imageUrl="https://example.com/kids-membership.jpg"
+        imageUrl="https://media.discordapp.net/attachments/1100705646573265008/1133734072779292702/65.png"
         description="Access to kids' gym and facilities. Supervised training sessions."
         price="59"
         onClick='https://buy.stripe.com/00g9C2euMclt4zS7sv'
       />
       <MembershipTier
         title="Online Membership"
-        imageUrl="https://example.com/online-membership.jpg"
+        imageUrl="https://media.discordapp.net/attachments/1100705646573265008/1133733652308709376/27.png"
         description="Access to online training platform. Virtual classes, blogs, nutrition and workouts."
         price="29"
         onClick='https://buy.stripe.com/7sI9C272k5X50jC148'
