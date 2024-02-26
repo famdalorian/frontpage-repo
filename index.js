@@ -3,7 +3,6 @@ const { MongoClient } = require('mongodb');
 
 const app = express();
 const PORT = process.env.PORT || 4000;
-const uri = 'mongodb+srv://famdalorian:' + encodeURIComponent('Goosebumps1998') + '@xxisspcluster.wwb1wwj.mongodb.net/?retryWrites=true&w=majority';
 
 // Middleware
 app.use(express.json());

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../styles/home.css";
+import '../App.css';
 import HerosectionLeft from "../components/HerosectionLeft";
 import HerosectionRight from "../components/HerosectionRight";
 import Tabs from "../components/Tabs";

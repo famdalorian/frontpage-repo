@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/classes.css";
+import '../App.css';
 import PJX_MT from "../assets/PJX_MT.png";
 import PJX_BJJ from "../assets/PJX_BJJ.png";
 import PJX_MMA from "../assets/PJX_MMA.png";

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes, FaTh, FaUser, FaTshirt, FaBitcoin, FaPen,  FaCode, FaVoicemail, FaPaintBrush,  FaRunning, FaHome } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
-import "../styles/sidebar.css";
+import '../App.css';
 
 function Sidebar({ children }) {
   const [isOpen, setIsOpen] = useState(false);

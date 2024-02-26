@@ -1,6 +1,6 @@
 import React from "react";
 import Article from "../components/Article";
-import "../styles/art.css";
+import '../App.css';
 
 function Art() {
   return (

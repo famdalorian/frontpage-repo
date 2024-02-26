@@ -1,5 +1,5 @@
 import React from 'react';
-import "../styles/memberships.css";
+import '../App.css';
 
 const MembershipTier = ({ title, imageUrl, description, price, onClick }) => {
   const handleBuyNowClick = () => {
@@ -11,7 +11,7 @@ const MembershipTier = ({ title, imageUrl, description, price, onClick }) => {
       <img src={imageUrl} alt={title} className="membership-image" />
       <h2>{title}</h2>
       <p>{description}</p>
-      <p className="price">{price}/month</p>
+      <p className="price">{price}</p>
       <button className="buy-button" onClick={handleBuyNowClick}>
         Buy Now
       </button>
@@ -22,6 +22,13 @@ const MembershipTier = ({ title, imageUrl, description, price, onClick }) => {
 const Memberships = () => {
   return (
     <div className="memberships-container">
+      <MembershipTier
+        title="Pay As You Go"
+        imageUrl="https://media.discordapp.net/attachments/1100705646573265008/1133057524279550003/xxisp_letter_X_xXlogo_for_boxing_class_gold_membership_diecut_s_d3fae689-b3f0-4e09-8f45-31e895708879-removebg-preview.png"
+        description="Access to all gym facilities. Unlimited classes and training sessions. Personalized training plans. Complimentary nutritional guidance."
+        price="9.99"
+        onClick="https://buy.stripe.com/bIY7tU0DWadl7M46oo" 
+      />
       <MembershipTier
         title="Gold Membership"
         imageUrl="https://media.discordapp.net/attachments/1100705646573265008/1133057524279550003/xxisp_letter_X_xXlogo_for_boxing_class_gold_membership_diecut_s_d3fae689-b3f0-4e09-8f45-31e895708879-removebg-preview.png"

@@ -82,7 +82,7 @@ input[type="submit"]:before {
   transform: rotate(45deg) translate(-100%, -100%);
   transition: all 0.3s ease;
 }
-
+/* 
 button:hover:before,
 input[type="submit"]:hover:before {
   transform: rotate(45deg) translate(0, 0);
@@ -91,7 +91,7 @@ input[type="submit"]:hover:before {
 button:hover,
 input[type="submit"]:hover {
   background: #ff9c91;
-}
+} */
 
 .image-button {
   max-height: 150px;

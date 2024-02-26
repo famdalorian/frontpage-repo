@@ -1,5 +1,7 @@
 import React from 'react';
 import Article from '../components/Article';
+import '../App.css';
+
 import Wordle from '../components/Wordle';  
 
 function Projects() {

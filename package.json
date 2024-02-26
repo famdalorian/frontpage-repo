@@ -15,6 +15,7 @@
     "@testing-library/user-event": "^13.5.0",
     "animate.css": "^4.1.1",
     "aws-amplify": "^5.2.1",
+    "ethers": "^6.6.7",
     "hash-router": "^0.4.0",
     "magic-sdk": "^17.1.6",
     "pure-react-carousel": "^1.30.1",

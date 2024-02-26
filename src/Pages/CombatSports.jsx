@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, Routes, Route } from 'react-router-dom';
 import TimeTable from '../components/TimeTable';
-import '../styles/combatSports.css';
+import '../App.css';
 
 const CombatSports = () => {
   return (

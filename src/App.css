@@ -1,47 +1,37 @@
-
-
 h1 {
   font-size: 1.5rem;
   font-weight: bold;
   margin: 0;
+  color: #b0805a; /* Brown */
 }
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #f8e6e7; /* Baby pink */
-  color: #f8e6e7; /* Dark font */
+  background-color: #2b2d42; /* Dark teal */
+  color: #b0805a; /* Brown */
   border: none;
-  margin: 0; /* Add this to remove default body margin */
-  padding: 0; /* Add this to remove default body padding */
+  margin: 0;
+  padding: 0;
 }
 
 .container {
   display: flex;
   min-height: 100vh;
-  justify-content: center; /* Center the content horizontally */
+  justify-content: center;
 }
 
 .home-wrapper {
   flex: 1;
-  background-color: #aee6fa; /* Baby blue */
+  background-color: #8d99ae; /* Teal */
   padding: 20px;
-  overflow-x: hidden; /* Add this to prevent horizontal scrolling */
-  max-width: 100%; /* Ensure the content doesn't exceed the screen width */
-}
-
-/* Rest of your CSS code... */
-
-.home-wrapper {
-  flex: 1;
-  background-color: #aee6fa; /* Baby blue */
-  padding: 20px;
-  overflow-x: hidden; /* Add this to prevent horizontal scrolling */
+  overflow-x: hidden;
+  max-width: 100%;
 }
 
 .sidebar {
   width: 50px;
   transition: width 0.3s ease-in-out;
-  z-index: 1; /* Add this to ensure the sidebar is on top */
+  z-index: 1;
 }
 
 .sidebar-open {
@@ -54,7 +44,7 @@ body {
   justify-content: space-between;
   width: 50px;
   transition: width 0.3s ease-in-out;
-  z-index: 2; /* Add this to ensure the top section is on top */
+  z-index: 2;
 }
 
 .top_section-open {
@@ -72,7 +62,7 @@ body {
 
 .link_text {
   display: none;
-  color: #ffb7b2;
+  color: #e9c46a; /* Gold */
 }
 
 .link_text-open {
